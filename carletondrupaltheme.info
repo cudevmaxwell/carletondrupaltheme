@@ -471,6 +471,9 @@
   ; Custom CSS
   settings[custom_css] = ''
 
+  ; Custom JS
+  scripts[] = scripts/svgeezy.min.js
+
 ; Information added by Drupal.org packaging script on 2014-03-23
 version = "7.x-3.2"
 core = "7.x"
