@@ -23,6 +23,7 @@
 // elements such as forms, tables, tabs etc.
 //
 
+$background:   #E6E6E6;
 $page:         #fff;    // to match the page background, default is white
 $border:       #ccc;    // all borders set in global.styles - tables, fieldset, primary links
 $highlight:    #c00;    // required mark, form error highlight, "new" label on comments
@@ -49,8 +50,12 @@ $primary_task_active: $page;
 // theme settings for web safe fonts.
 //
 
-$sans-serif-small:            'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-$sans-serif-large:            Verdana, Geneva, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+@import url("../fonts/opensans_regular/stylesheet.css");
+@import url("../fonts/opensans_semibold/stylesheet.css");
+@import url("../fonts/opensans_lightitalic/stylesheet.css");
+
+$sans-serif-small:            'open_sansregular', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-large:            'open_sanssemibold', Verdana, Geneva, 'DejaVu Sans', Arial, Helvetica, sans-serif;
 $sans-serif-arial-helvetica:  Arial, Helvetica, sans-serif;
 $calibri-candara:             Calibri, Candara, Arial, Helvetica, sans-serif;
 $serif-small:                 Garamond, Perpetua, 'Times New Roman', serif;

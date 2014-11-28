@@ -1,3 +1,6 @@
+@import url("../fonts/opensans_regular/stylesheet.css");
+@import url("../fonts/opensans_semibold/stylesheet.css");
+@import url("../fonts/opensans_lightitalic/stylesheet.css");
 /*
  * responsive.custom.css is for custom media queries that are not set via the
  * theme settings, such as cascading media queries.

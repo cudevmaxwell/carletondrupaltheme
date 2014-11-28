@@ -1,3 +1,6 @@
+@import url("../fonts/opensans_regular/stylesheet.css");
+@import url("../fonts/opensans_semibold/stylesheet.css");
+@import url("../fonts/opensans_lightitalic/stylesheet.css");
 /*
  * @file
  * global.styles
@@ -33,12 +36,12 @@
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\0000341}}
 html {
-  background: #fff;
+  background: #E6E6E6;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\0000345}}
 body {
-  font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 87.5%;
 }
 
@@ -56,6 +59,14 @@ var {
 }
 
 /* =============================================================================
+ *   Admin Toolbar
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003147}}
+#admin-menu {
+  position: relative;
+}
+
+/* =============================================================================
  *   Wrappers
  * ========================================================================== */
 /*
@@ -68,6 +79,11 @@ var {
  * style the .container class but do not add width such as border, padding,
  * margins etc.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003170}}
+#page {
+  background: #fff;
+}
+
 /*
  * Wraps all header elements - branding and .region-header
  */
@@ -104,7 +120,7 @@ var {
 /*
  * Wraps the header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003239}}
 #header-wrapper {
   /* Debug styles, is this working */
   background: rgba(255, 192, 203, 0.5);
@@ -131,7 +147,7 @@ var {
 /*
  * Footer wrapper
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003297}}
 #footer-wrapper {
   /* Debug styles, is this working? */
   background: rgba(255, 192, 203, 0.5);
@@ -146,11 +162,11 @@ var {
 /*
  * Logo
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003318}}
 #logo {
   padding: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003321}}
 #logo img {
   vertical-align: bottom;
 }
@@ -161,15 +177,15 @@ var {
 /*
  * Site name (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003336}}
 #site-name {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003341}}
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003346}}
 #site-name a:hover, #site-name a:focus {
   text-decoration: underline;
 }
@@ -177,7 +193,7 @@ var {
 /*
  * Site slogan (h2)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003357}}
 #site-slogan {
   margin: 0;
 }
@@ -191,7 +207,7 @@ var {
 /*
  * The main page title (h1)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003375}}
 #page-title {
   margin: 0;
 }
@@ -205,14 +221,14 @@ var {
 /*
  * Aggregator feed source
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003393}}
 #aggregator .feed-source .feed-icon {
   display: inline;
   float: none;
   margin-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003400}}
 .feed-details dt,
 .feed-details dd {
   display: inline;
@@ -225,16 +241,16 @@ var {
 /*
  * Generic styles for links. See the ul.links declaration in node and comment stylesheets
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003416}}
 ul.links {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003420}}
 ul.links.inline {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003424}}
 ul.links li {
   display: inline;
   list-style: none;
@@ -244,7 +260,7 @@ ul.links li {
 /*
  * Search results are an ordered list so reset the margin
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003435}}
 .search-results {
   margin: 0;
   padding: 0;
@@ -253,19 +269,19 @@ ul.links li {
 /*
  * Attribution message and link
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003444}}
 .attribution {
   display: block;
   opacity: 0.65;
   padding: 1em 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003450}}
 .attribution a {
   text-decoration: none;
   color: inherit;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003454}}
 .attribution a:hover, .attribution a:focus {
   text-decoration: underline;
 }
@@ -315,11 +331,11 @@ ul.links li {
 /* =============================================================================
  *   Links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003548}}
 a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003557}}
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -327,18 +343,18 @@ a:hover, a:focus {
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003568}}
 .nav {
   clear: both;
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003564}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003572}}
 .nav ul,
 .nav ul.menu {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003578}}
 .nav li,
 .nav ul.menu li {
   display: inline;
@@ -347,14 +363,14 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003587}}
 .nav li a,
 .nav ul.menu li a {
   display: block;
   white-space: nowrap;
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003599}}
 .nav .block {
   margin-bottom: 0;
 }
@@ -362,11 +378,11 @@ a:hover, a:focus {
 /* =============================================================================
  *   Superfish
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003609}}
 ul.sf-menu {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003604}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003612}}
 ul.sf-menu a {
   border-left: 0;
   border-top: 0;
@@ -375,11 +391,11 @@ ul.sf-menu a {
   height: 2.5em;
   line-height: 2.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003617}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003625}}
 ul.sf-menu li:hover, ul.sf-menu li.sfHover {
   outline: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003624}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003632}}
 ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   outline: 0;
 }
@@ -387,12 +403,12 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Superfish blocks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003640}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003648}}
 .block-superfish ul {
   margin: 0 !important;
   padding: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003659}}
 .block-superfish li {
   margin: 0 !important;
   padding: 0 !important;
@@ -401,22 +417,22 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Vertical style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003661}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003669}}
 .sf-vertical {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003664}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003672}}
 .sf-vertical li {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003669}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003677}}
 .sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
   left: 100%;
   top: 0;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003685}}
 .sf-vertical li a {
   padding: 0 10px;
 }
@@ -424,7 +440,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Navbar style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003695}}
 .sf-navbar {
   padding-bottom: 0 !important;
 }
@@ -432,7 +448,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Sensible padding for the default style
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003695}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003703}}
 .sf-menu.sf-style-default a {
   padding: 0 10px;
 }
@@ -440,7 +456,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menu Toggles
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003705}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003713}}
 .at-mt .at-menu-toggle,
 .at-mt .at-menu-toggle ul,
 .at-mt .at-menu-toggle ul.menu {
@@ -448,11 +464,11 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   margin-bottom: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003713}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003721}}
 .at-mt .at-menu-toggle-button {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003717}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003725}}
 .at-mt .at-menu-toggle ul a {
   padding: 0 10px;
   white-space: nowrap;
@@ -461,21 +477,21 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003736}}
 ul.menu {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003731}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003739}}
 ul.menu ul {
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003739}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003747}}
 ul.menu li {
   margin: 0;
 }
 
 /* If li.content exists it's a problem, so reset the padding */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003768}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003776}}
 .block .menu li.content {
   padding: 0;
 }
@@ -483,13 +499,13 @@ ul.menu li {
 /* =============================================================================
  *   Book navigation menu
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003785}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003793}}
 .book-navigation .page-up {
   /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
   min-width: 2em;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003791}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003799}}
 .book-navigation .menu {
   margin-left: 0;
 }
@@ -497,31 +513,31 @@ ul.menu li {
 /* =============================================================================
  *   Breadcrumbs
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003801}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003809}}
 #breadcrumb {
   margin: 10px 0;
   /* If the label is set to show in theme settings the label class is added */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003805}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003813}}
 #breadcrumb .breadcrumb-label {
   font-size: 1em;
   display: inline;
   padding-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003810}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003818}}
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003815}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003823}}
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003820}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003828}}
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003832}}
 #breadcrumb li {
   list-style: none;
   display: inline;
@@ -530,31 +546,31 @@ ul.menu li {
 /* =============================================================================
  *   Pagers
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003851}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003859}}
 ul.pager {
   clear: both;
   margin: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003858}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003866}}
 .item-list ul.pager li {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003863}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003871}}
 ul.pager li {
   background-image: none;
   display: inline;
   list-style-type: none;
   padding: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003869}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003877}}
 ul.pager li.pager-current {
   font-weight: 700;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003875}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003883}}
 .block ul.pager li {
   margin: 0;
 }
@@ -565,7 +581,7 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Skip Navigation
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003912}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003920}}
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -575,7 +591,7 @@ ul.pager li.pager-current {
   width: 12em;
   z-index: 50;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003921}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003929}}
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -586,7 +602,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003931}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003939}}
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -597,7 +613,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003942}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003950}}
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
@@ -605,24 +621,24 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Tabs (local tasks)
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003955}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003963}}
 #tasks {
   margin-bottom: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003960}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003968}}
 ul.primary {
   border-bottom-color: #ccc;
   margin: 20px 0;
   padding: 0 0 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003965}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003973}}
 ul.primary li {
   display: block;
   float: left;
   margin: 0 1px -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003970}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003978}}
 ul.primary li a {
   background-color: #f5f5f5;
   border-color: #ccc;
@@ -633,12 +649,12 @@ ul.primary li a {
   height: 1.5em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003980}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003988}}
 ul.primary li a:hover, ul.primary li a:focus {
   background-color: #eee;
   border-color: #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003989}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003997}}
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
@@ -646,19 +662,19 @@ ul.primary li.active a:focus {
   border-bottom-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\00003999}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031007}}
 ul.secondary {
   border-bottom: 1px solid #ccc;
   margin: 1em 0 0;
   padding: 0 .3em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031004}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031012}}
 ul.secondary li {
   border-right: 0;
   list-style: none;
   padding: 0 10px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031010}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031018}}
 ul.secondary li a:hover, ul.secondary li a.active {
   border-bottom: none;
   text-decoration: underline;
@@ -667,7 +683,7 @@ ul.secondary li a:hover, ul.secondary li a.active {
 /* =============================================================================
  *   Action links
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031024}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031032}}
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
@@ -685,11 +701,11 @@ ul.action-links {
 /*
  * When labels are set to inline in field display settings the clearfix class is automatically added
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031051}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031059}}
 .field-label-inline {
   /* Remove the margin on inline field lables to preserve vertical formatting */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031054}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031062}}
 .field-label-inline .field-label {
   margin: 0;
 }
@@ -697,7 +713,7 @@ ul.action-links {
 /*
  * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031062}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031070}}
 .field-label {
   font-size: 1em;
   font-weight: 700;
@@ -715,17 +731,17 @@ ul.action-links {
 /*
  * Taxonomy
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031091}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031099}}
 .field-type-taxonomy-term-reference {
   /* The same bottom margin as p, blockquote, ul, ol and dl */
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031096}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031104}}
 .field-type-taxonomy-term-reference.field-label-inline .field-items {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031109}}
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
@@ -783,7 +799,7 @@ ul.action-links {
 /*
  * Float left setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031223}}
 .ia-l .field-type-image figure,
 .iat-l .field-type-image figure {
   margin: 5px 20px 15px 0;
@@ -792,7 +808,7 @@ ul.action-links {
 /*
  * Centered setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031232}}
 .ia-c .field-type-image figure,
 .iat-c .field-type-image figure {
   margin: 5px auto 15px;
@@ -801,7 +817,7 @@ ul.action-links {
 /*
  * Float right setting
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031241}}
 .ia-r .field-type-image figure,
 .iat-r .field-type-image figure {
   margin: 5px 0 15px 20px;
@@ -813,7 +829,7 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031255}}
 .block {
   margin-bottom: 20px;
 }
@@ -836,7 +852,7 @@ ul.action-links {
 /*
  * Block title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031293}}
 .block-title {
   margin: 0;
 }
@@ -847,12 +863,12 @@ ul.action-links {
 /*
  * Match item list and block menu margin and padding
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031309}}
 .block-content ul,
 .block-content ol {
   padding: 0 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031314}}
 .block-content li {
   margin: 0;
   padding: 0;
@@ -942,11 +958,11 @@ ul.action-links {
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031487}}
 .node {
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031496}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031504}}
 .node .node-title {
   margin: 0;
 }
@@ -962,15 +978,15 @@ ul.action-links {
 /*
  * Wrapper for the list of comments and its titles
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031554}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031562}}
 #comments {
   margin: 1.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031558}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031566}}
 #comments h2.comment-title {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031570}}
 #comments h2.comment-form {
   margin: 0;
 }
@@ -978,7 +994,7 @@ ul.action-links {
 /*
  * Wrapper for a single comment
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031580}}
 .comment {
   margin-bottom: 20px;
 }
@@ -986,7 +1002,7 @@ ul.action-links {
 /*
  * Comment title
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031611}}
 .comment-title {
   margin: 0;
 }
@@ -1000,7 +1016,7 @@ ul.action-links {
 /*
  * "New" marker for comments that are new for the current user
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031635}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031643}}
 .new {
   color: #c00;
 }
@@ -1008,7 +1024,7 @@ ul.action-links {
 /*
  * Nested comments are indented
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031651}}
 .indented {
   margin-left: 40px;
 }
@@ -1019,17 +1035,17 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031657}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031665}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031663}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031671}}
 .form-item label {
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031670}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031678}}
 .form-item .description {
   font-size: 0.85em;
 }
@@ -1037,7 +1053,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031683}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031691}}
 .marker,
 .form-required {
   color: #c00;
@@ -1046,7 +1062,7 @@ ul.action-links {
 /*
  * The submit button
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031697}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031705}}
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -1055,7 +1071,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031706}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031714}}
 fieldset {
   border: 1px solid #ccc;
 }
@@ -1066,7 +1082,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031720}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031728}}
 a.button {
   -moz-appearance: button;
   -webkit-appearance: button;
@@ -1075,7 +1091,7 @@ a.button {
 /*
  * Password confirmation
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031736}}
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -1084,18 +1100,18 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031738}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031746}}
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031743}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031751}}
 table.sticky-header {
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031749}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031757}}
 table,
 thead,
 tbody,
@@ -1105,27 +1121,27 @@ td {
   border-color: #ccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031759}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031767}}
 table,
 td,
 th {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031766}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031774}}
 caption,
 th,
 td {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031773}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031781}}
 thead tr {
   font-weight: 700;
   background-color: #e5e5e5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031779}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031787}}
 td,
 th {
   border-bottom: 0;
@@ -1133,29 +1149,29 @@ th {
   padding: 5px 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031790}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031798}}
 tbody tr {
   border-top: 1px solid #ccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031803}}
 tr {
   /* Table row striping */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031797}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031805}}
 tr.odd {
   background: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031802}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031810}}
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
   background-color: #f5f5f5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031821}}
 tr.odd td.active {
   background-color: #eee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031817}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031825}}
 tr.even td.active {
   background-color: #ebebeb;
 }
@@ -1164,7 +1180,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031840}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031848}}
 #forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
   white-space: normal;
 }
@@ -1172,12 +1188,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031856}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031864}}
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031869}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -1186,7 +1202,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031902}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031910}}
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -1203,7 +1219,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/_custom\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/_custom\.scss}line{font-family:\00003192}}
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -1212,28 +1228,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031913}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031921}}
 .maintenance-page .container {
   padding: 40px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031917}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031925}}
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031925}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031933}}
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031932}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031940}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031936}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031944}}
 .db-offline #content {
   padding: 20px 0;
 }
@@ -1244,7 +1260,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031949}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031957}}
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -1253,7 +1269,7 @@ div.messages ul {
 /*
  * Devel Module
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031966}}
 .dev-query {
   background: #eee;
   padding: 30px;
@@ -1262,11 +1278,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031967}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031975}}
 #styleguide-header {
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031970}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/global\.styles\.scss}line{font-family:\000031978}}
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;
