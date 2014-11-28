@@ -144,8 +144,10 @@ var {
 /* =============================================================================
  *   Admin Toolbar
  * ========================================================================== */
+
 #admin-menu {
   position: relative;
+  box-shadow: none;
 }
 
 
@@ -226,19 +228,9 @@ var {
  */
 
 /*
- * Wraps the leaderboard
- */
-#leaderboard-wrapper {
-  .container {}
-}
-
-
-/*
  * Wraps the header
  */
 #header-wrapper {
-  /* Debug styles, is this working */
-  background: $debug;
   .container {}
 }
 
@@ -295,10 +287,54 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
-  /* Debug styles, is this working? */
-  background: $debug;
-
   .container {}
+}
+
+/* =============================================================================
+ *   Leaderboard
+ * ========================================================================== */
+
+#leaderboard-wrapper {
+  background: #1A1A1A;
+
+  .block {
+    margin: 0px;
+  }
+
+  .block-inner { 
+    margin: 0px;
+  }
+
+  .clearfix {
+    overflow: auto;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #FFF;
+    padding: 0.25rem 0.45rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3%/15%;
+    &:hover {
+      color: #1A1A1A;
+      background-color: #EFEFEF;
+    }
+  }
+
+  #logo a:hover{
+    color: transparent;
+    background-color: transparent;
+  }
+
+  ul {
+    padding: 0rem;
+    margin: 0.4rem 0.2rem 0.4rem 0.5rem;
+  }
+
 }
 
 

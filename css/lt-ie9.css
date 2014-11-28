@@ -1,14 +1,6 @@
 @import url("../fonts/opensans_regular/stylesheet.css");
 @import url("../fonts/opensans_semibold/stylesheet.css");
 @import url("../fonts/opensans_lightitalic/stylesheet.css");
-/*
- * Target IE 6, 7 and 8 (less than IE9)
- */
-/*
- * Assuming a mobile first approach with respond.js OFF, we must reset the font
- * size for lt IE9
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal-7\.34\/sites\/all\/themes\/carletondrupaltheme\/sass\/lt-ie9\.scss}line{font-family:\0000313}}
-html {
-  font-size: 81.3%;
-}
+/* Target IE 6, 7 and 8 (less than IE9) */
+/* Assuming a mobile first approach with respond.js OFF, we must reset the font size for lt IE9 */
+html { font-size: 81.3%; }
