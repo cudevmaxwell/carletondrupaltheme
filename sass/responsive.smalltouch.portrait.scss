@@ -37,6 +37,10 @@
   }
 }
 
+/* =============================================================================
+ *   Remove Ribbon Style
+ * ========================================================================== */
+
 #columns {
   border-left: none;
   border-right: none;
@@ -47,4 +51,51 @@
   div.container{
     min-height: 0.5rem;
   }
+}
+
+/* =============================================================================
+ *   Header Navigation Update
+ * ========================================================================== */
+
+#header {
+  text-align: center;
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+}
+
+#branding{
+  display: block;
+  float: none;
+  #logo{
+    @include ghost-center-trick;
+    padding: 0px;
+    margin-top: -15px;
+  }
+  #site-name{
+   @include ghost-center-trick;
+   padding-top: 0.3rem;
+  }
+  #site-slogan{
+    @include ghost-center-trick;
+  }
+}
+
+.region-header-navigation{
+
+  float: none;
+  margin-top: 0.1rem;
+
+  nav {
+    @include ghost-center-trick;
+  }
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+
 }

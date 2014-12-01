@@ -37,15 +37,6 @@
   }
 }
 
-#columns {
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-}
+@import "mobile";
 
-#title-wrapper{
-  div.container{
-    min-height: 0.5rem;
-  }
-}
 

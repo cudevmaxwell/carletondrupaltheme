@@ -166,7 +166,7 @@ var {
   }
 
   .clearfix {
-    overflow: auto;
+    overflow: visible;
   }
 
   a {
@@ -176,8 +176,8 @@ var {
     display: inline-block;
     border-radius: 3%/15%;
     &:hover {
-      color: #1A1A1A;
-      background-color: #EFEFEF;
+      background: $button_active_background;
+      color: $darkgrey;
     }
   }
 
@@ -204,7 +204,34 @@ var {
 
 div .region-leaderboard {
   float: right;
+
+  ul.nice-menu li { 
+    background: none;
+    border: none;
+    &:hover{
+      background: none;
+    }
+    ul{
+      background: $button_active_background;
+    }
+
+  }
+
+  #sidr-wrapper-0{
+    padding: 0rem;
+    margin: 0.4rem 0.2rem 0.4rem 0.5rem;
+    a {
+      background: $button_nonactive_background;
+        &:hover {
+          background: $button_active_background;
+          color: $darkgrey;
+      }
+    }
+  }
+
 }
+
+
 
 /* =============================================================================
  *   Leaderboard Left
@@ -213,13 +240,7 @@ div .region-leaderboard {
 div .region-leaderboard-parent {
   float: left;
   a {
-    color: #fff;
-    background: $leaderboard_grey;
-    &:hover{
-      background: $leaderboard_lightgrey;
-      color: $darkgrey;
-      text-decoration: none;
-    }
+    background: $button_nonactive_background;
   }
 }
 
@@ -283,7 +304,7 @@ div .region-leaderboard-parent {
 
   img {
     vertical-align: bottom;
-    width: 60px;
+    width: 70px;
   }
 }
 
@@ -301,7 +322,7 @@ div .region-leaderboard-parent {
 #site-name {
   margin: 0;
   padding-top: 0.8rem;
-  line-height: 2rem;
+  line-height: 2.4rem;
   font-family: $sans-serif-small;
   font-weight: 400;
   font-size: 2.4rem;
@@ -340,7 +361,7 @@ div .region-leaderboard-parent {
 .region-header-navigation{
 
   .block{
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 
   margin-top: 0.8rem;
@@ -349,7 +370,7 @@ div .region-leaderboard-parent {
 
   ul{
     list-style: none;
-    margin: 0px;
+    margin: 0px 0px 0.3rem 0px;
     float: right;
   }
 
@@ -359,7 +380,15 @@ div .region-leaderboard-parent {
 
   li a{
     color: black;
-    margin-right: 1rem;
+    background: #CFDADF;
+    padding: 0.3rem 0.6rem;
+    margin-right: 1rem;    
+    border-radius: 3%/15%;
+    text-decoration: none;
+    &:hover {
+          background: $button_active_background;
+          color: $darkgrey;          
+    }
   }
 
   li.last a{
@@ -372,14 +401,8 @@ div .region-leaderboard-parent {
  *   Search  (only in Header Navigation)
  * ========================================================================== */
 
-.region-header-navigation #block-search-form form {
-  border: thin solid #DADADA;
-  background: #F1F1F1;
-  border-radius: 1%/20%;
-}
-
 .region-header-navigation #block-search-form form input {
-  border: none;
+  border: thin solid #DADADA;
   background: #F1F1F1;
   border-radius: 1%/20%;
   padding: 0.5rem;
@@ -387,7 +410,6 @@ div .region-leaderboard-parent {
 }
 
 #block-search-form form input.form-submit {
-  border-left: thin solid #DADADA;
   &:hover{
     text-decoration: underline;
   }
@@ -500,6 +522,7 @@ div .region-leaderboard-parent {
  * Wraps the tertiary content/postfix region
  */
 #tertiary-content-wrapper {
+    clear: both;
   .container {
   }
 }
@@ -624,6 +647,8 @@ ul.links {
 
 a {
   text-decoration: none;
+
+  color: #186d92;
 
   &:link,
   &:visited {}

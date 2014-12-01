@@ -33,8 +33,10 @@ $medium_light: #ebebeb; // table row even active
 $medium_dark:  #e5e5e5; // table thead
 $debug:        rgba(255, 192, 203, 0.5); // Full width wrapper test
 $darkgrey: #1A1A1A;
-$leaderboard_lightgrey: #EFEFEF;
-$leaderboard_grey: #393939;
+
+$button_nonactive_background: #393939;
+$button_active_background: #EFEFEF;
+
 $offwhite: rgb(222, 223, 215);
 $carletonred: #B9212c;
 
@@ -201,3 +203,9 @@ $gutter-width: 10px;
   }
 }
 
+@mixin ghost-center-trick{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0px;
+    float: none;
+}

@@ -8,6 +8,18 @@
 .at-mt .at-menu-toggle h2 a { background: #eee; border: 2px solid #ccc; padding: 2px 10px; }
 .at-mt .at-menu-toggle ul.menu li a { background: #eee; border-bottom: 1px solid #fff; }
 
+/* ============================================================================= Remove Ribbon Style ========================================================================== */
 #columns { border-left: none; border-right: none; border-bottom: none; }
 
 #title-wrapper div.container { min-height: 0.5rem; }
+
+/* ============================================================================= Header Navigation Update ========================================================================== */
+#header { text-align: center; }
+#header:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; /* Adjusts for spacing */ }
+
+#branding { display: inline-block; vertical-align: middle; float: none; }
+#branding #logo { padding-left: 0px; }
+
+.region-header-navigation { float: none; margin-top: 0.1rem; }
+.region-header-navigation nav { display: inline-block; vertical-align: middle; float: none; }
+.region-header-navigation ul { margin: 0px; padding: 0px; }

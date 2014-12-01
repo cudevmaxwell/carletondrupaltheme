@@ -18,20 +18,25 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 #leaderboard-wrapper { background: #1A1A1A; }
 #leaderboard-wrapper .block { margin: 0px; }
 #leaderboard-wrapper .block-inner { margin: 0px; }
-#leaderboard-wrapper .clearfix { overflow: auto; }
+#leaderboard-wrapper .clearfix { overflow: visible; }
 #leaderboard-wrapper a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; }
-#leaderboard-wrapper a:hover { color: #1A1A1A; background-color: #EFEFEF; }
+#leaderboard-wrapper a:hover { background: #EFEFEF; color: #1A1A1A; }
 #leaderboard-wrapper ul { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; list-style: none; }
 #leaderboard-wrapper li { display: inline-block; padding: 0px; }
 #leaderboard-wrapper li a { margin-right: 0.3rem; }
 #leaderboard-wrapper li.last a { margin-right: 0px; }
 
 div .region-leaderboard { float: right; }
+div .region-leaderboard ul.nice-menu li { background: none; border: none; }
+div .region-leaderboard ul.nice-menu li:hover { background: none; }
+div .region-leaderboard ul.nice-menu li ul { background: #EFEFEF; }
+div .region-leaderboard #sidr-wrapper-0 { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; }
+div .region-leaderboard #sidr-wrapper-0 a { background: #393939; }
+div .region-leaderboard #sidr-wrapper-0 a:hover { background: #EFEFEF; color: #1A1A1A; }
 
 /* ============================================================================= Leaderboard Left ========================================================================== */
 div .region-leaderboard-parent { float: left; }
-div .region-leaderboard-parent a { color: #fff; background: #393939; }
-div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; text-decoration: none; }
+div .region-leaderboard-parent a { background: #393939; }
 
 /* ============================================================================= Page  ========================================================================== */
 #page { background: #E6E6E6; }
@@ -48,13 +53,13 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; te
 
 /* Logo */
 #logo { padding: 10px; float: left; }
-#logo img { vertical-align: bottom; width: 60px; }
+#logo img { vertical-align: bottom; width: 70px; }
 
 /* Wrapper for the site name and slogan */
 #name-and-slogan { float: left; }
 
 /* Site name (h1) */
-#site-name { margin: 0; padding-top: 0.8rem; line-height: 2rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
+#site-name { margin: 0; padding-top: 0.8rem; line-height: 2.4rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
 #site-name a { color: black; }
 #site-name a:link, #site-name a:visited { text-decoration: none; }
 #site-name a:hover, #site-name a:focus { text-decoration: underline; }
@@ -64,18 +69,16 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; te
 
 /* ============================================================================= Header Navigation ========================================================================== */
 .region-header-navigation { margin-top: 0.8rem; float: right; }
-.region-header-navigation .block { margin-bottom: 0.8rem; }
-.region-header-navigation ul { list-style: none; margin: 0px; float: right; }
+.region-header-navigation .block { margin-bottom: 0.5rem; }
+.region-header-navigation ul { list-style: none; margin: 0px 0px 0.3rem 0px; float: right; }
 .region-header-navigation li { display: inline-block; }
-.region-header-navigation li a { color: black; margin-right: 1rem; }
+.region-header-navigation li a { color: black; background: #CFDADF; padding: 0.3rem 0.6rem; margin-right: 1rem; border-radius: 3%/15%; text-decoration: none; }
+.region-header-navigation li a:hover { background: #EFEFEF; color: #1A1A1A; }
 .region-header-navigation li.last a { margin-right: 0px; }
 
 /* ============================================================================= Search  (only in Header Navigation) ========================================================================== */
-.region-header-navigation #block-search-form form { border: thin solid #DADADA; background: #F1F1F1; border-radius: 1%/20%; }
+.region-header-navigation #block-search-form form input { border: thin solid #DADADA; background: #F1F1F1; border-radius: 1%/20%; padding: 0.5rem; border-right: none; }
 
-.region-header-navigation #block-search-form form input { border: none; background: #F1F1F1; border-radius: 1%/20%; padding: 0.5rem; border-right: none; }
-
-#block-search-form form input.form-submit { border-left: thin solid #DADADA; }
 #block-search-form form input.form-submit:hover { text-decoration: underline; }
 
 /* ============================================================================= Page title  ========================================================================== */
@@ -99,6 +102,8 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; te
 /* Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style */
 /* Panels may need additional margin wrangling when in the $content region */
 /* Wraps the tertiary content/postfix region */
+#tertiary-content-wrapper { clear: both; }
+
 /* ============================================================================= Footer  ========================================================================== */
 #footer-wrapper .container { background: #1A1A1A; border-bottom: 0.2rem solid #b9212c; }
 
@@ -130,7 +135,7 @@ ul.links li { display: inline; list-style: none; padding: 0 10px 0 0; }
 .attribution a:hover, .attribution a:focus { text-decoration: underline; }
 
 /* ============================================================================= Links ========================================================================== */
-a { text-decoration: none; }
+a { text-decoration: none; color: #186d92; }
 a:hover, a:focus { text-decoration: underline; }
 
 /* ============================================================================= Primary, Secondary and Menu Bar region menus ========================================================================== */

@@ -1,0 +1,57 @@
+/* =============================================================================
+ *   Remove Ribbon Style
+ * ========================================================================== */
+
+#columns {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#title-wrapper{
+  div.container{
+    min-height: 0.5rem;
+  }
+}
+
+/* =============================================================================
+ *   Header Navigation Update
+ * ========================================================================== */
+
+#header {
+  text-align: center;
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em; /* Adjusts for spacing */
+    }
+}
+
+#branding{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  #logo{
+    padding-left: 0px;
+  }
+}
+
+.region-header-navigation{
+
+  float: none;
+  margin-top: 0.1rem;
+
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+
+}
