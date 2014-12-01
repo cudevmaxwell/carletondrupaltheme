@@ -150,176 +150,6 @@ var {
   box-shadow: none;
 }
 
-
-/* =============================================================================
- *   Wrappers
- * ========================================================================== */
-
-/*
- * Outer wrappers:
- * - #page-wrapper: body > #page-wrapper
- * - #page: body > #page-wrapper > #page
- * - .container: body > #page-wrapper > #page.container
- *
- * The .container class holds the page width value from theme settings. You can
- * style the .container class but do not add width such as border, padding,
- * margins etc.
- */
-
-#page-wrapper {}
-
-
-#page  {
-  background: $background;
-  &.container {}
-}
-
-
-/*
- * Wraps all header elements - branding and .region-header
- */
-#header {}
-
-
-/*
- * Wraps the sidebars the content column
- */
-#columns {
-    border-top: 1rem solid #5A1E17;
-    border-left: 1rem solid #E6E6E6;
-    border-right: 1rem solid #E6E6E6;
-    border-bottom: 1rem solid #090909;
-    background: $page;
-    div.columns-inner{
-      background: $page;
-      position: relative;
-      top: -1rem;
-      padding-top: 0.3rem;
-    }
-}
-
-
-/*
- * Main content column wrapper
- */
-#content-column {}
-
-
-/*
- * Wraps the main-content-header, the content region and feed-icons. Use this
- * wrapper to style the entire main content column
- */
-#main-content {}
-
-
-/*
- * Wraps the content region, avoid applying styles to this wrapper, its used
- * mainly for position and invisible gutters and can be problematic to style
- */
-#content {}
-
-
-/*
- * Footer wrapper
- */
-#footer {
-    background: $page;
-    color: $offwhite;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    position: relative;
-    top: -1rem;
-}
-
-
-/*
- * Panels may need additional margin wrangling when in the $content region
- */
-#content .panel-display {}
-
-
-/*
- * Full Width Wrappers
- * These are used in the optional page--full-width-wrappers.tpl.php template.
- * All have internal .container classes. In the full width wrapper template the
- * .container classes set the width or max-width - you can style this but never
- * add any width/margin/padding/borders etc to .container
- * 
- */
-
-/*
- * Wraps the header
- */
-#header-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps the nav elements
- */
-#nav-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps breadcrumb
- */
-#breadcrumb-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps messages and help
- */
-#messages-help-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps the secondary content/preface region
- */
-#secondary-content-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps the main content column
- */
-#content-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Wraps the tertiary content/postfix region
- */
-#tertiary-content-wrapper {
-  .container {
-  }
-}
-
-
-/*
- * Footer wrapper
- */
-#footer-wrapper {
-  .container {
-    background: #1A1A1A;
-    border-bottom: 0.2rem solid #b9212c;
-  }
-}
-
 /* =============================================================================
  *   Leaderboard
  * ========================================================================== */
@@ -393,6 +223,45 @@ div .region-leaderboard-parent {
   }
 }
 
+/* =============================================================================
+ *   Page 
+ * ========================================================================== */
+
+#page-wrapper {}
+
+
+#page  {
+  background: $background;
+  &.container {}
+}
+
+/* =============================================================================
+ *   Header 
+ * ========================================================================== */
+
+/*
+ * Wraps the header
+ */
+#header-wrapper {
+  .container {
+  }
+}
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+#header {}
+
+/*
+ * Wraps the nav elements
+ */
+#nav-wrapper {
+  .container {
+  }
+}
+
+.region-header{
+  float: left;
+}
 
 /* =============================================================================
  *   Branding
@@ -404,7 +273,6 @@ div .region-leaderboard-parent {
 #branding {
     float: left;
 }
-
 
 /*
  * Logo
@@ -418,7 +286,6 @@ div .region-leaderboard-parent {
     width: 60px;
   }
 }
-
 
 /*
  * Wrapper for the site name and slogan
@@ -455,7 +322,6 @@ div .region-leaderboard-parent {
   }
 }
 
-
 /*
  * Site slogan (h2)
  */
@@ -468,18 +334,81 @@ div .region-leaderboard-parent {
 }
 
 /* =============================================================================
- *   Page title 
+ *   Header Navigation
  * ========================================================================== */
-#title-wrapper{
-    color: white;
-    div.container{
-      background: $carletonred;
-    }
-    h1{
-      padding-left: 2rem;
-    }
+
+.region-header-navigation{
+
+  .block{
+    margin-bottom: 0.8rem;
+  }
+
+  margin-top: 0.8rem;
+
+  float: right;
+
+  ul{
+    list-style: none;
+    margin: 0px;
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li a{
+    color: black;
+    margin-right: 1rem;
+  }
+
+  li.last a{
+    margin-right: 0px;
+  }
+
 }
 
+/* =============================================================================
+ *   Search  (only in Header Navigation)
+ * ========================================================================== */
+
+.region-header-navigation #block-search-form form {
+  border: thin solid #DADADA;
+  background: #F1F1F1;
+  border-radius: 1%/20%;
+}
+
+.region-header-navigation #block-search-form form input {
+  border: none;
+  background: #F1F1F1;
+  border-radius: 1%/20%;
+  padding: 0.5rem;
+  border-right: none;
+}
+
+#block-search-form form input.form-submit {
+  border-left: thin solid #DADADA;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+/* =============================================================================
+ *   Page title 
+ * ========================================================================== */
+
+#title-wrapper{
+  color: white;
+  clear: both;
+  div.container{
+    background: $carletonred;
+  }
+  h1{
+    padding-left: 2rem;
+    margin: 0;
+  }
+}
 
 /* =============================================================================
  *   Page content header
@@ -490,18 +419,121 @@ div .region-leaderboard-parent {
  */
 #main-content-header {}
 
-#title-wrapper{
-  clear: both;
+/* =============================================================================
+ *   Content 
+ * ========================================================================== */
+
+/*
+ * Wraps breadcrumb
+ */
+#breadcrumb-wrapper {
+  .container {
+  }
 }
+
+/*
+ * Wraps messages and help
+ */
+#messages-help-wrapper {
+  .container {
+  }
+}
+
+/*
+ * Wraps the secondary content/preface region
+ */
+#secondary-content-wrapper {
+  .container {
+  }
+}
+
+/*
+ * Wraps the sidebars the content column
+ */
+#columns {
+    border-top: 1rem solid #5A1E17;
+    border-left: 1rem solid #E6E6E6;
+    border-right: 1rem solid #E6E6E6;
+    border-bottom: 1rem solid #090909;
+    background: $page;
+    div.columns-inner{
+      background: $page;
+      position: relative;
+      top: -1rem;
+      padding-top: 0.3rem;
+    }
+}
+
+/*
+ * Main content column wrapper
+ */
+#content-column {}
+
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this
+ * wrapper to style the entire main content column
+ */
+#main-content {}
 
 
 /*
- * The main page title (h1)
+ * Wraps the main content column
  */
-#page-title {
-  margin: 0;
+#content-wrapper {
+  .container {
+  }
 }
 
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used
+ * mainly for position and invisible gutters and can be problematic to style
+ */
+#content {}
+
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+#content .panel-display {}
+
+/*
+ * Wraps the tertiary content/postfix region
+ */
+#tertiary-content-wrapper {
+  .container {
+  }
+}
+
+/* =============================================================================
+ *   Footer 
+ * ========================================================================== */
+
+#footer-wrapper {
+  .container {
+    background: #1A1A1A;
+    border-bottom: 0.2rem solid #b9212c;
+  }
+}
+
+#footer {
+    background: $page;
+    color: $offwhite;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -1rem;
+}
+
+/*
+ * Footer region
+ */
+.region-footer {
+    background: $darkgrey;
+    position: relative;
+    top: 1rem;
+    a {
+      color: $offwhite;
+    }
+}
 
 /* =============================================================================
  *   Misc Global Styles
@@ -582,92 +614,6 @@ ul.links {
       text-decoration: underline;
     }
   }
-}
-
-
-/* =============================================================================
- *   Regions
- * ========================================================================== */
-
-/*
- * Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc
- */
-.region {}
-
-
-/*
- * Regions have an inner div - perfect for adding margin, padding or borders
- */
-.region-inner {}
-
-
-/*
- * Regions can be nested, such as when using Panels
- */
-.region-inner .region-inner {}
-
-
-/*
- * Header region, embedded in the #header
- */
-.region-header {}
-
-
-/*
- * Generally used to output Drupals help block, if the help module is enabled
- */
-.region-help {}
-
-
-/*
- * Secondary content
- */
-.region-secondary-content {}
-
-
-/*
- * Sits above the main content header, like a content-top region
- */
-.region-highlighted {}
-
-
-/*
- * Sits below the main content, like a content-bottom region
- */
-.region-content-aside {}
-
-
-/*
- * Sidebars - targets both
- */
-.sidebar {}
-
-
-/*
- * First sidebar
- */
-.region-sidebar-first {}
-
-
-/*
- * Second sidebar
- */
-.region-sidebar-second {}
-
-
-/*
- * Tertiary content
- */
-.region-tertiary-content {}
-
-
-/*
- * Footer region
- */
-.region-footer {
-    background: $darkgrey;
-    position: relative;
-    top: 1rem;
 }
 
 

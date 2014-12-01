@@ -150,6 +150,10 @@
 
         <?php print render($page['header']); ?>
 
+        <?php if ($page['header_navigation']): ?>
+          <?php print render($page['header_navigation']); ?>
+        <?php endif; ?>
+
         </header>
       </div>
     </div>

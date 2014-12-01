@@ -86,6 +86,7 @@
   regions[leaderboard]       = Leaderboard
   regions[leaderboard_parent]  = Leaderboard Parent
   regions[header]            = Header
+  regions[header_navigation] = Header Navigation
   regions[menu_bar]          = Menu Bar
   regions[help]              = Help
   regions[page_top]          = Page top
