@@ -36,3 +36,16 @@
     border-bottom: 1px solid #fff;
   }
 }
+
+#columns {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#title-wrapper{
+  div.container{
+    min-height: 0.5rem;
+  }
+}
+

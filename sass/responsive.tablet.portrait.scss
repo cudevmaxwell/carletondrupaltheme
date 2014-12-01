@@ -12,3 +12,15 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
+#columns {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#title-wrapper{
+  div.container{
+    min-height: 0.5rem;
+  }
+}
+

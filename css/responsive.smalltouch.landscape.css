@@ -7,3 +7,7 @@
 .at-mt .at-menu-toggle h2 { margin-bottom: 5px; }
 .at-mt .at-menu-toggle h2 a { background: #eee; border: 2px solid #ccc; padding: 2px 10px; }
 .at-mt .at-menu-toggle ul.menu li a { background: #eee; border-bottom: 1px solid #fff; }
+
+#columns { border-left: none; border-right: none; border-bottom: none; }
+
+#title-wrapper div.container { min-height: 0.5rem; }

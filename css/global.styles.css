@@ -80,7 +80,7 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; te
 
 /* ============================================================================= Page title  ========================================================================== */
 #title-wrapper { color: white; clear: both; }
-#title-wrapper div.container { background: #B9212c; }
+#title-wrapper div.container { background: #B9212c; min-height: 1rem; }
 #title-wrapper h1 { padding-left: 2rem; margin: 0; }
 
 /* ============================================================================= Page content header ========================================================================== */
