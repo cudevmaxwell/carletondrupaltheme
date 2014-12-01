@@ -145,7 +145,6 @@
                 </div><!-- /end #name-and-slogan -->
               <?php endif; ?>
 
-
             </div><!-- /end #branding -->
           <?php endif; ?>
 
@@ -174,33 +173,33 @@
     </div>   
 
     <div id="content-wrapper"><div class="container">
-
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb-wrapper">
-          <div class="container clearfix">
-            <?php print $breadcrumb; ?>
-          </div>
-        </div>
-      <?php endif; ?>
-  
-      <?php if ($messages || $page['help']): ?>
-        <div id="messages-help-wrapper">
-          <div class="container clearfix">
-            <?php print $messages; ?>
-            <?php print render($page['help']); ?>
-          </div>
-        </div>
-      <?php endif; ?>
-  
-      <?php if ($page['secondary_content']): ?>
-        <div id="secondary-content-wrapper">
-          <div class="container clearfix">
-            <?php print render($page['secondary_content']); ?>
-          </div>
-        </div>
-      <?php endif; ?>
-
       <div id="columns"><div class="columns-inner clearfix">
+
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb-wrapper">
+            <div class="container clearfix">
+              <?php print $breadcrumb; ?>
+            </div>
+          </div>
+        <?php endif; ?>
+
+        <?php if ($messages || $page['help']): ?>
+          <div id="messages-help-wrapper">
+            <div class="container clearfix">
+              <?php print $messages; ?>
+              <?php print render($page['help']); ?>
+            </div>
+          </div>
+        <?php endif; ?>
+  
+        <?php if ($page['secondary_content']): ?>
+          <div id="secondary-content-wrapper">
+            <div class="container clearfix">
+              <?php print render($page['secondary_content']); ?>
+            </div>
+          </div>
+        <?php endif; ?>
+
         <div id="content-column"><div class="content-inner">
 
           <?php print render($page['highlighted']); ?>
@@ -252,27 +251,27 @@
         <?php print render($page['sidebar_first']); ?>
         <?php print render($page['sidebar_second']); ?>
 
-      </div></div>
-    </div></div>
-
-    <?php if ($page['tertiary_content']): ?>
-      <div id="tertiary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['tertiary_content']); ?>
+        <?php if ($page['tertiary_content']): ?>
+        <div id="tertiary-content-wrapper">
+          <div class="container clearfix">
+            <?php print render($page['tertiary_content']); ?>
+          </div>
         </div>
-      </div>
-    <?php endif; ?>
+        <?php endif; ?>
 
-    <?php if ($page['footer'] || $attribution): ?>
+      </div></div>
+    </div></div>    
+
       <div id="footer-wrapper">
         <div class="container clearfix">
           <footer<?php print $footer_attributes; ?>>
+            <?php if ($page['footer'] || $attribution): ?>
             <?php print render($page['footer']); ?>
             <?php print $attribution; ?>
+            <?php endif; ?>
           </footer>
         </div>
       </div>
-    <?php endif; ?>
 
   </div>
 </div>
