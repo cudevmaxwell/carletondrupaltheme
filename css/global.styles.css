@@ -16,16 +16,21 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 
 /* ============================================================================= Wrappers ========================================================================== */
 /* Outer wrappers: - #page-wrapper: body > #page-wrapper - #page: body > #page-wrapper > #page - .container: body > #page-wrapper > #page.container  The .container class holds the page width value from theme settings. You can style the .container class but do not add width such as border, padding, margins etc. */
-#page { background: #fff; }
+#page { background: #E6E6E6; }
 
 /* Wraps all header elements - branding and .region-header */
 /* Wraps the sidebars the content column */
+#columns { border-top: 1rem solid #5A1E17; border-left: 1rem solid #E6E6E6; border-right: 1rem solid #E6E6E6; border-bottom: 1rem solid #090909; background: #fff; }
+#columns div.columns-inner { background: #fff; position: relative; top: -1rem; padding-top: 0.3rem; }
+
 /* Main content column wrapper */
 /* Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column */
 /* Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style */
 /* Footer wrapper */
+#footer { background: #fff; color: #dedfd7; margin-left: 1rem; margin-right: 1rem; position: relative; top: -1rem; }
+
 /* Panels may need additional margin wrangling when in the $content region */
-/* Full Width Wrappers These are used in the optional page--full-width-wrappers.tpl.php template. All have internal .container classes. In the full width wrapper template the .container classes set the width or max-width - you can style this but never add any width/margin/padding/borders etc to .container */
+/* Full Width Wrappers These are used in the optional page--full-width-wrappers.tpl.php template. All have internal .container classes. In the full width wrapper template the .container classes set the width or max-width - you can style this but never add any width/margin/padding/borders etc to .container  */
 /* Wraps the header */
 /* Wraps the nav elements */
 /* Wraps breadcrumb */
@@ -34,34 +39,56 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 /* Wraps the main content column */
 /* Wraps the tertiary content/postfix region */
 /* Footer wrapper */
+#footer-wrapper .container { background: #1A1A1A; border-bottom: 0.2rem solid #b9212c; }
+
 /* ============================================================================= Leaderboard ========================================================================== */
 #leaderboard-wrapper { background: #1A1A1A; }
 #leaderboard-wrapper .block { margin: 0px; }
 #leaderboard-wrapper .block-inner { margin: 0px; }
 #leaderboard-wrapper .clearfix { overflow: auto; }
-#leaderboard-wrapper li { list-style: none; }
 #leaderboard-wrapper a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; }
 #leaderboard-wrapper a:hover { color: #1A1A1A; background-color: #EFEFEF; }
-#leaderboard-wrapper #logo a:hover { color: transparent; background-color: transparent; }
-#leaderboard-wrapper ul { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; }
+#leaderboard-wrapper ul { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; list-style: none; }
+#leaderboard-wrapper li { display: inline-block; padding: 0px; }
+#leaderboard-wrapper li a { margin-right: 0.3rem; }
+#leaderboard-wrapper li.last a { margin-right: 0px; }
+
+div .region-leaderboard { float: right; }
+
+/* ============================================================================= Leaderboard Left ========================================================================== */
+div .region-leaderboard-parent { float: left; }
+div .region-leaderboard-parent a { color: #fff; background: #393939; }
+div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; text-decoration: none; }
 
 /* ============================================================================= Branding ========================================================================== */
 /* Wraps all the branding elements, logo, name and slogan */
+#branding { float: left; }
+
 /* Logo */
-#logo { padding: 10px 0; }
-#logo img { vertical-align: bottom; }
+#logo { padding: 10px; float: left; }
+#logo img { vertical-align: bottom; width: 60px; }
 
 /* Wrapper for the site name and slogan */
+#name-and-slogan { float: left; }
+
 /* Site name (h1) */
-#site-name { margin: 0; }
+#site-name { margin: 0; padding-top: 0.8rem; line-height: 2rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
+#site-name a { color: black; }
 #site-name a:link, #site-name a:visited { text-decoration: none; }
 #site-name a:hover, #site-name a:focus { text-decoration: underline; }
 
 /* Site slogan (h2) */
-#site-slogan { margin: 0; }
+#site-slogan { margin: 0; font-family: "open_sanslight_italic", Arial, Helvetica, sans-serif; display: block; float: right; font-weight: normal; }
+
+/* ============================================================================= Page title  ========================================================================== */
+#title-wrapper { color: white; }
+#title-wrapper div.container { background: #B9212c; }
+#title-wrapper h1 { padding-left: 2rem; }
 
 /* ============================================================================= Page content header ========================================================================== */
 /* Main content header wraps the page title, tabs and actions links */
+#title-wrapper { clear: both; }
+
 /* The main page title (h1) */
 #page-title { margin: 0; }
 
@@ -100,6 +127,8 @@ ul.links li { display: inline; list-style: none; padding: 0 10px 0 0; }
 /* Second sidebar */
 /* Tertiary content */
 /* Footer region */
+.region-footer { background: #1A1A1A; position: relative; top: 1rem; }
+
 /* ============================================================================= Links ========================================================================== */
 a { text-decoration: none; }
 a:hover, a:focus { text-decoration: underline; }

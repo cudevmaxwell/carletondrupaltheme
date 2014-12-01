@@ -94,6 +94,9 @@
  * - $page['content_aside']: like a main content bottom region
  * - $page['tertiary_content']: full width just above the footer
  *
+ * CarletonTheme Regions:
+ * - $page['leaderboard_left']: Link back to parent site, or carleton homepage
+ *
  * @see template_preprocess()
  * @see template_preprocess_page()
  * @see template_process()
@@ -104,9 +107,10 @@
 <div id="page-wrapper">
   <div id="page" class="<?php print $classes; ?>">
 
-    <?php if($page['leaderboard']): ?>
+    <?php if($page['leaderboard'] or $page['leaderboard_parent']): ?>
       <div id="leaderboard-wrapper">
         <div class="container clearfix">
+          <?php print render($page['leaderboard_parent']); ?>
           <?php print render($page['leaderboard']); ?>
         </div>
       </div>
@@ -161,32 +165,41 @@
       </div>
     <?php endif; ?>
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb-wrapper">
-        <div class="container clearfix">
-          <?php print $breadcrumb; ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($messages || $page['help']): ?>
-      <div id="messages-help-wrapper">
-        <div class="container clearfix">
-          <?php print $messages; ?>
-          <?php print render($page['help']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($page['secondary_content']): ?>
-      <div id="secondary-content-wrapper">
-        <div class="container clearfix">
-          <?php print render($page['secondary_content']); ?>
-        </div>
-      </div>
-    <?php endif; ?>
+    <div id="title-wrapper">
+      <div class="container clearfix"> 
+        <?php if ($title): ?>
+        <h1 id="page-title"><?php print $title; ?></h1>
+        <?php endif; ?>   
+      </div>        
+    </div>   
 
     <div id="content-wrapper"><div class="container">
+
+      <?php if ($breadcrumb): ?>
+        <div id="breadcrumb-wrapper">
+          <div class="container clearfix">
+            <?php print $breadcrumb; ?>
+          </div>
+        </div>
+      <?php endif; ?>
+  
+      <?php if ($messages || $page['help']): ?>
+        <div id="messages-help-wrapper">
+          <div class="container clearfix">
+            <?php print $messages; ?>
+            <?php print render($page['help']); ?>
+          </div>
+        </div>
+      <?php endif; ?>
+  
+      <?php if ($page['secondary_content']): ?>
+        <div id="secondary-content-wrapper">
+          <div class="container clearfix">
+            <?php print render($page['secondary_content']); ?>
+          </div>
+        </div>
+      <?php endif; ?>
+
       <div id="columns"><div class="columns-inner clearfix">
         <div id="content-column"><div class="content-inner">
 
@@ -198,10 +211,6 @@
 
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
-
-                <?php if ($title): ?>
-                  <h1 id="page-title"><?php print $title; ?></h1>
-                <?php endif; ?>
 
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
                   <div id="tasks">

@@ -84,6 +84,7 @@
   regions[tertiary_content]  = Tertiary
   regions[footer]            = Footer
   regions[leaderboard]       = Leaderboard
+  regions[leaderboard_parent]  = Leaderboard Parent
   regions[header]            = Header
   regions[menu_bar]          = Menu Bar
   regions[help]              = Help
@@ -272,6 +273,7 @@
 
   ; Polyfills
   settings[load_html5js]       = 1
+  settings[load_matchmediajs]  = 1
   settings[load_respondjs]     = 0
   settings[load_ltie8css]      = 0
   settings[load_scalefixjs]    = 0
@@ -437,7 +439,7 @@
   settings[rel_author] = 0
 
 
-  ; Mobile metu toggle
+  ; Mobile menu toggle
   settings[menu_toggle_tablet_portrait]  = 1
   settings[menu_toggle_tablet_landscape] = 0
   settings[menu_toggle_main_menu]        = 1
