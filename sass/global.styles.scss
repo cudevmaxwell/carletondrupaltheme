@@ -157,11 +157,11 @@ var {
 #leaderboard-wrapper {
   background: $darkgrey;
 
-  max-height: 41px;
+  height: 40px;
 
   .block {
     padding: 0rem;
-    margin: 0.4rem 0.2rem 0.4rem 0.5rem;
+    margin: 0.4rem 0.2rem 0rem 0.5rem;
     list-style: none;
   }
 
@@ -170,7 +170,7 @@ var {
   }
 
   .clearfix {
-    overflow: visible;
+
   }
 
   li{
@@ -195,6 +195,10 @@ div .region-leaderboard {
   li.sfHover a {
       background: $button_active_background;
       color: $darkgrey;
+      padding-bottom: 9px;
+      bottom-border: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
   }
 
   a {
@@ -220,9 +224,13 @@ div .region-leaderboard {
     }
 
     ul {
+      -webkit-box-shadow: 3px 5px 5px 0px rgba(50,50,50,0.75);
+      -moz-box-shadow: 3px 5px 5px 0px rgba(50,50,50,0.75);
+      box-shadow: 3px 5px 5px 0px rgba(50,50,50,0.75);
       background: $button_active_background;
       margin: 0px;
       padding-top: 10px;
+      top: 32px;
       a {
         color: #186d92;
         background: transparent;

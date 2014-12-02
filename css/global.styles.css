@@ -15,21 +15,20 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 #admin-menu { position: relative; box-shadow: none; }
 
 /* ============================================================================= Leaderboard ========================================================================== */
-#leaderboard-wrapper { background: #1A1A1A; max-height: 41px; }
-#leaderboard-wrapper .block { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; list-style: none; }
+#leaderboard-wrapper { background: #1A1A1A; height: 40px; }
+#leaderboard-wrapper .block { padding: 0rem; margin: 0.4rem 0.2rem 0rem 0.5rem; list-style: none; }
 #leaderboard-wrapper .block-inner { margin: 0px; }
-#leaderboard-wrapper .clearfix { overflow: visible; }
 #leaderboard-wrapper li { display: inline-block; padding: 0px; }
 #leaderboard-wrapper li a { margin-right: 0.3rem; }
 #leaderboard-wrapper li.last a { margin-right: 0px; }
 
 div .region-leaderboard { float: right; }
-div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; }
+div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; padding-bottom: 9px; bottom-border: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
 div .region-leaderboard a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
 div .region-leaderboard .sf-menu { line-height: inherit; }
 div .region-leaderboard ul.sf-hidden { left: -100px !important; }
 div .region-leaderboard ul.sf-menu li.last ul { left: -94px; }
-div .region-leaderboard ul.sf-menu ul { background: #EFEFEF; margin: 0px; padding-top: 10px; }
+div .region-leaderboard ul.sf-menu ul { -webkit-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); background: #EFEFEF; margin: 0px; padding-top: 10px; top: 32px; }
 div .region-leaderboard ul.sf-menu ul a { color: #186d92; background: transparent; }
 div .region-leaderboard ul.sf-menu ul a:hover { text-decoration: underline; }
 div .region-leaderboard #sidr-wrapper-0 { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; }
