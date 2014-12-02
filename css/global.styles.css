@@ -80,7 +80,7 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 .region-header-navigation li.last a { margin-right: 0px; }
 
 /* ============================================================================= Search  (only in Header Navigation) ========================================================================== */
-.region-header-navigation #block-search-form form input { border: thin solid #DADADA; background: #F1F1F1; border-radius: 1%/20%; padding: 0.5rem; border-right: none; }
+#block-search-form form input { border: thin solid #DADADA; background: #F1F1F1; border-radius: 1%/20%; padding: 0.5rem; }
 
 #block-search-form form input.form-submit:hover { text-decoration: underline; }
 

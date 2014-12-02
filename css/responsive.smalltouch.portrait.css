@@ -13,15 +13,6 @@
 
 #title-wrapper div.container { min-height: 0.5rem; }
 
-/* ============================================================================= Header Navigation Update ========================================================================== */
 #header { text-align: center; }
-#header:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; }
 
-#branding { display: block; float: none; }
-#branding #logo { display: inline-block; vertical-align: middle; padding-left: 0px; float: none; padding: 0px; margin-top: -15px; }
-#branding #site-name { display: inline-block; vertical-align: middle; padding-left: 0px; float: none; padding-top: 0.3rem; }
-#branding #site-slogan { display: inline-block; vertical-align: middle; padding-left: 0px; float: none; }
-
-.region-header-navigation { float: none; margin-top: 0.1rem; }
-.region-header-navigation nav { display: inline-block; vertical-align: middle; padding-left: 0px; float: none; }
-.region-header-navigation ul { margin: 0px; padding: 0px; }
+#branding { display: inline-block; float: none; }

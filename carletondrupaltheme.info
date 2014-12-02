@@ -478,6 +478,7 @@
   scripts[] = scripts/svgeezy.min.js
   scripts[] = scripts/init_svgeezy.js
   scripts[] = scripts/move_admin_menu.js
+  scripts[] = scripts/sidr_combine.js
 
 ; Information added by Drupal.org packaging script on 2014-03-23
 version = "7.x-3.2"

@@ -202,10 +202,3 @@ $gutter-width: 10px;
     }
   }
 }
-
-@mixin ghost-center-trick{
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 0px;
-    float: none;
-}

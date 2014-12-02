@@ -439,12 +439,11 @@ div .region-leaderboard-parent {
  *   Search  (only in Header Navigation)
  * ========================================================================== */
 
-.region-header-navigation #block-search-form form input {
+ #block-search-form form input {
   border: thin solid #DADADA;
   background: #F1F1F1;
   border-radius: 1%/20%;
   padding: 0.5rem;
-  border-right: none;
 }
 
 #block-search-form form input.form-submit {
