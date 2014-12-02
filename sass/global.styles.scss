@@ -157,8 +157,12 @@ var {
 #leaderboard-wrapper {
   background: $darkgrey;
 
+  max-height: 41px;
+
   .block {
-    margin: 0px;
+    padding: 0rem;
+    margin: 0.4rem 0.2rem 0.4rem 0.5rem;
+    list-style: none;
   }
 
   .block-inner { 
@@ -167,24 +171,6 @@ var {
 
   .clearfix {
     overflow: visible;
-  }
-
-  a {
-    color: #FFF;
-    padding: 0.25rem 0.45rem;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 3%/15%;
-    &:hover {
-      background: $button_active_background;
-      color: $darkgrey;
-    }
-  }
-
-  ul {
-    padding: 0rem;
-    margin: 0.4rem 0.2rem 0.4rem 0.5rem;
-    list-style: none;
   }
 
   li{
@@ -199,22 +185,52 @@ var {
   li.last a{
     margin-right: 0px;
   }
+ 
 
 }
 
 div .region-leaderboard {
   float: right;
 
-  ul.nice-menu li { 
-    background: none;
-    border: none;
-    &:hover{
-      background: none;
-    }
-    ul{
+  li.sfHover a {
       background: $button_active_background;
+      color: $darkgrey;
+  }
+
+  a {
+    color: #FFF;
+    padding: 0.25rem 0.45rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3%/15%;
+    background: $button_nonactive_background;
+  }
+
+  .sf-menu{
+    line-height: inherit;
+  }
+
+  ul.sf-hidden{
+   left: -100px !important;
+  }
+
+  ul.sf-menu{ 
+    li.last ul{
+       left: -94px;
     }
 
+    ul {
+      background: $button_active_background;
+      margin: 0px;
+      padding-top: 10px;
+      a {
+        color: #186d92;
+        background: transparent;
+        &:hover {
+          text-decoration: underline;        
+        }
+      }
+    }
   }
 
   #sidr-wrapper-0{
@@ -238,10 +254,23 @@ div .region-leaderboard {
  * ========================================================================== */
 
 div .region-leaderboard-parent {
-  float: left;
-  a {
-    background: $button_nonactive_background;
+  ul{
+    margin: 0px;
   }
+  float: left;
+   a {
+    color: #FFF;
+    padding: 0.25rem 0.45rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3%/15%;
+    background: $button_nonactive_background;
+    &:hover {
+      background: $button_active_background;
+      color: $darkgrey;
+    }
+  }
+ 
 }
 
 /* =============================================================================
@@ -293,6 +322,7 @@ div .region-leaderboard-parent {
  */
 #branding {
     float: left;
+    clear: both;
 }
 
 /*
@@ -704,107 +734,7 @@ a {
 }
 
 
-/* =============================================================================
- *   Superfish
- * ========================================================================== */
 
-ul.sf-menu {
-  margin-bottom: 0;
-
-  a {
-    border-left: 0;
-    border-top: 0;
-    padding: 0 10px;
-    text-decoration: none;
-    height: 2.5em;
-    line-height: 2.5em;
-
-    &:link,
-    &:visited {}
-  }
-
-  li {
-    &:hover,
-    &.sfHover {
-      outline: 0;
-    }
-  }
-
-  a {
-    &:focus,
-    &:hover,
-    &:active {
-      outline: 0;
-    }
-  }
-}
-
-
-/*
- * Superfish blocks
- */
-.block-superfish {
-
-  .block-inner .content {}
-
-  ul {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    ul {
-      ul {
-        ul {}
-      }
-    }
-  }
-
-  li {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
-
-/*
- * Vertical style
- */
-.sf-vertical {
-  width: 100%;
-
-  li {
-    width: 100%;
-
-    &.last {}
-
-    &:hover ul,
-    &.sfHover ul {
-      left: 100%;
-      top: 0;
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      padding: 0 10px;
-    }
-  }
-}
-
-
-/*
- * Navbar style
- */
-.sf-navbar {
-  padding-bottom: 0 !important;
-}
-
-
-/*
- * Sensible padding for the default style
- */
-.sf-menu.sf-style-default a {
-  padding: 0 10px;
-}
 
 
 /* =============================================================================

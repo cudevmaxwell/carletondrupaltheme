@@ -15,28 +15,32 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 #admin-menu { position: relative; box-shadow: none; }
 
 /* ============================================================================= Leaderboard ========================================================================== */
-#leaderboard-wrapper { background: #1A1A1A; }
-#leaderboard-wrapper .block { margin: 0px; }
+#leaderboard-wrapper { background: #1A1A1A; max-height: 41px; }
+#leaderboard-wrapper .block { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; list-style: none; }
 #leaderboard-wrapper .block-inner { margin: 0px; }
 #leaderboard-wrapper .clearfix { overflow: visible; }
-#leaderboard-wrapper a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; }
-#leaderboard-wrapper a:hover { background: #EFEFEF; color: #1A1A1A; }
-#leaderboard-wrapper ul { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; list-style: none; }
 #leaderboard-wrapper li { display: inline-block; padding: 0px; }
 #leaderboard-wrapper li a { margin-right: 0.3rem; }
 #leaderboard-wrapper li.last a { margin-right: 0px; }
 
 div .region-leaderboard { float: right; }
-div .region-leaderboard ul.nice-menu li { background: none; border: none; }
-div .region-leaderboard ul.nice-menu li:hover { background: none; }
-div .region-leaderboard ul.nice-menu li ul { background: #EFEFEF; }
+div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; }
+div .region-leaderboard a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
+div .region-leaderboard .sf-menu { line-height: inherit; }
+div .region-leaderboard ul.sf-hidden { left: -100px !important; }
+div .region-leaderboard ul.sf-menu li.last ul { left: -94px; }
+div .region-leaderboard ul.sf-menu ul { background: #EFEFEF; margin: 0px; padding-top: 10px; }
+div .region-leaderboard ul.sf-menu ul a { color: #186d92; background: transparent; }
+div .region-leaderboard ul.sf-menu ul a:hover { text-decoration: underline; }
 div .region-leaderboard #sidr-wrapper-0 { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; }
 div .region-leaderboard #sidr-wrapper-0 a { background: #393939; }
 div .region-leaderboard #sidr-wrapper-0 a:hover { background: #EFEFEF; color: #1A1A1A; }
 
 /* ============================================================================= Leaderboard Left ========================================================================== */
 div .region-leaderboard-parent { float: left; }
-div .region-leaderboard-parent a { background: #393939; }
+div .region-leaderboard-parent ul { margin: 0px; }
+div .region-leaderboard-parent a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
+div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 
 /* ============================================================================= Page  ========================================================================== */
 #page { background: #E6E6E6; }
@@ -49,7 +53,7 @@ div .region-leaderboard-parent a { background: #393939; }
 
 /* ============================================================================= Branding ========================================================================== */
 /* Wraps all the branding elements, logo, name and slogan */
-#branding { float: left; }
+#branding { float: left; clear: both; }
 
 /* Logo */
 #logo { padding: 10px; float: left; }
@@ -144,28 +148,6 @@ a:hover, a:focus { text-decoration: underline; }
 .nav li, .nav ul.menu li { display: inline; float: left; list-style: none; margin: 0; padding: 0; }
 .nav li a, .nav ul.menu li a { display: block; white-space: nowrap; padding: 0 10px; }
 .nav .block { margin-bottom: 0; }
-
-/* ============================================================================= Superfish ========================================================================== */
-ul.sf-menu { margin-bottom: 0; }
-ul.sf-menu a { border-left: 0; border-top: 0; padding: 0 10px; text-decoration: none; height: 2.5em; line-height: 2.5em; }
-ul.sf-menu li:hover, ul.sf-menu li.sfHover { outline: 0; }
-ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active { outline: 0; }
-
-/* Superfish blocks */
-.block-superfish ul { margin: 0 !important; padding: 0 !important; }
-.block-superfish li { margin: 0 !important; padding: 0 !important; }
-
-/* Vertical style */
-.sf-vertical { width: 100%; }
-.sf-vertical li { width: 100%; }
-.sf-vertical li:hover ul, .sf-vertical li.sfHover ul { left: 100%; top: 0; margin: 0; padding: 0; }
-.sf-vertical li a { padding: 0 10px; }
-
-/* Navbar style */
-.sf-navbar { padding-bottom: 0 !important; }
-
-/* Sensible padding for the default style */
-.sf-menu.sf-style-default a { padding: 0 10px; }
 
 /* ============================================================================= Menu Toggles ========================================================================== */
 .at-mt .at-menu-toggle, .at-mt .at-menu-toggle ul, .at-mt .at-menu-toggle ul.menu { margin-top: 0; margin-bottom: 0; padding: 0; }
