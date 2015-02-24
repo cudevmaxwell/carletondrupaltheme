@@ -23,8 +23,10 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 #leaderboard-wrapper li.last a { margin-right: 0px; }
 
 div .region-leaderboard { float: right; }
-div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; padding-bottom: 9px; bottom-border: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
+div .region-leaderboard ul { margin: 0px; }
 div .region-leaderboard a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
+div .region-leaderboard a:hover { background: #EFEFEF; color: #1A1A1A; }
+div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; padding-bottom: 9px; bottom-border: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
 div .region-leaderboard .sf-menu { line-height: inherit; }
 div .region-leaderboard ul.sf-hidden { left: -100px !important; }
 div .region-leaderboard ul.sf-menu li.last ul { left: -94px; }
@@ -35,7 +37,7 @@ div .region-leaderboard #sidr-wrapper-0 { padding: 0rem; margin: 0.4rem 0.2rem 0
 div .region-leaderboard #sidr-wrapper-0 a { background: #393939; }
 div .region-leaderboard #sidr-wrapper-0 a:hover { background: #EFEFEF; color: #1A1A1A; }
 
-/* ============================================================================= Leaderboard Left ========================================================================== */
+/* ============================================================================= Leaderboard Parent ========================================================================== */
 div .region-leaderboard-parent { float: left; }
 div .region-leaderboard-parent ul { margin: 0px; }
 div .region-leaderboard-parent a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }

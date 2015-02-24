@@ -192,15 +192,10 @@ var {
 div .region-leaderboard {
   float: right;
 
-  li.sfHover a {
-      background: $button_active_background;
-      color: $darkgrey;
-      padding-bottom: 9px;
-      bottom-border: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+  ul{
+     margin: 0px;
   }
-
+  
   a {
     color: #FFF;
     padding: 0.25rem 0.45rem;
@@ -208,6 +203,19 @@ div .region-leaderboard {
     display: inline-block;
     border-radius: 3%/15%;
     background: $button_nonactive_background;
+    &:hover {
+      background: $button_active_background;
+      color: $darkgrey;
+    }
+  }
+
+  li.sfHover a {
+      background: $button_active_background;
+      color: $darkgrey;
+      padding-bottom: 9px;
+      bottom-border: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
   }
 
   .sf-menu{
@@ -258,7 +266,7 @@ div .region-leaderboard {
 
 
 /* =============================================================================
- *   Leaderboard Left
+ *   Leaderboard Parent
  * ========================================================================== */
 
 div .region-leaderboard-parent {
@@ -280,6 +288,7 @@ div .region-leaderboard-parent {
   }
  
 }
+
 
 /* =============================================================================
  *   Page 
