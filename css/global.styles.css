@@ -62,7 +62,7 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 #name-and-slogan { float: left; }
 
 /* Site name (h1) */
-#site-name { margin: 0; padding-top: 0.8rem; line-height: 2.4rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
+#site-name { margin: 0; padding-top: 0.8rem; line-height: 2.4rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 2.4rem; }
 #site-name a { color: black; }
 #site-name a:link, #site-name a:visited { text-decoration: none; }
 #site-name a:hover, #site-name a:focus { text-decoration: underline; }

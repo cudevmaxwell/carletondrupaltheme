@@ -16,3 +16,4 @@
 #header { text-align: center; }
 
 #branding { display: inline-block; float: none; }
+#branding #logo { padding-bottom: 0px; position: relative; }

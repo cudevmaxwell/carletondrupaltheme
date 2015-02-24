@@ -342,7 +342,7 @@ div .region-leaderboard-parent {
 
   img {
     vertical-align: bottom;
-    width: 70px;
+    width: $logo_width;
   }
 }
 
@@ -362,7 +362,7 @@ div .region-leaderboard-parent {
   padding-top: 0.8rem;
   line-height: 2.4rem;
   font-family: $sans-serif-small;
-  font-weight: 400;
+  //font-weight: 400;
   font-size: 2.4rem;
 
   a {
