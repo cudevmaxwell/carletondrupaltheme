@@ -64,7 +64,148 @@
 /*
  * Tablet sizes and up
  */
-/* @media only screen and (min-width: 768px) {} */
+@media only screen and (min-width: 768px) {
+
+  #leaderboard-wrapper {
+    height: 40px;
+
+    .block {
+      padding: 0rem;
+      margin: 0.4rem 0.2rem 0rem 0.5rem;
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0px;
+
+      &.last a {
+        margin-right: 0px;
+      }
+    }
+
+    // Drop downs
+    li ul li {
+      display: block;
+
+      a {
+        margin-right: 0;
+        border-radius: 0;
+      }
+    }
+  }
+
+  #menu-link {
+    display: none;
+  }
+
+  #block-system-main-menu {
+    float: right;
+    display: block;
+
+    ul {
+
+      > li {
+        padding: 0 0.5rem;
+
+        &.active-trail {
+
+          > ul {
+            display: none;
+          }
+
+          a {
+            font-style: normal;
+          }
+        }
+
+        &.hover {
+
+          > a {
+            background: $button_active_background;
+            color: $darkgrey;
+            padding-bottom: 0.6rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+
+        a {
+          padding: 0.25rem 0.6rem;
+
+          &.active {
+            font-style: normal;
+          }
+        }
+
+
+      }
+    }
+
+    // Drop downs
+    > div > ul {
+      position: relative;
+    }
+
+    ul > li > ul {
+      display: none;
+      width: 9rem;
+      position: absolute;
+      top: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: $button_active_background;
+      -webkit-box-shadow: 3px 3px 4px 0px rgba(black, 0.4);
+      -moz-box-shadow: 3px 3px 4px 0px rgba(black, 0.4);
+      box-shadow: 3px 3px 4px 0px rgba(black, 0.5);
+
+      li {
+        padding: 0;
+      }
+
+      a {
+        background-color: $button_active_background;
+        color: #186d92;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ul > li.last > ul { // Prevent last drop down from going offscreen
+      right: 0.5rem;
+    }
+
+  }
+
+  div .region-leaderboard {
+
+    ul {
+      margin: 0px;
+    }
+  }
+
+  #logo {
+    padding: 10px;
+    float: left;
+    position: static;
+    margin-left: 0;
+
+    img {
+      vertical-align: bottom;
+      width: $logo_width;
+      height: $logo_width;
+    }
+  }
+
+  #header {
+    text-align: left;
+  }
+
+}
 
 
 /*
