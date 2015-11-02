@@ -84,6 +84,9 @@
  * @see adaptivetheme_process_block()
  */
 ?>
+
+<a href="#" id="menu-link" class="inactive hover">Menu</a>
+
 <?php print $outer_prefix . $inner_prefix; ?>
 
   <?php print $content_processed; ?>

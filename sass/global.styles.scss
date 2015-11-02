@@ -155,54 +155,92 @@ var {
  * ========================================================================== */
 
 #leaderboard-wrapper {
+  min-height: 40px;
   background: $darkgrey;
-
-  height: 40px;
-
-  .block {
-    padding: 0rem;
-    margin: 0.4rem 0.2rem 0rem 0.5rem;
-    list-style: none;
-  }
 
   .block-inner { 
     margin: 0px;
   }
+}
 
-  .clearfix {
+#menu-link {
+  float: right;
+  margin: 0.3rem;
+  padding: 0.25rem 0.45rem;
+}
 
+#block-system-main-menu {
+  display: none;
+  clear: both;
+  position: relative;
+  z-index: 10;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0.5rem;
   }
 
-  li{
-    display: inline-block;
-    padding: 0px;
+  li {
+
+    &.leaf,
+    &.collapsed {
+      list-style-type: none;
+      list-style-image: none;
+    }
+
+    a {
+      display: block;
+      background-color: $darkgrey;
+      padding: 0.5rem;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: $button_active_background;
+      }
+
+      &.active {
+        font-style: italic;
+      }
+    }
+
+    ul {
+      display: none; // Hide sub menus
+    }
   }
 
-  li a{
-    margin-right: 0.3rem;
+  ul > li.active-trail {
+
+    a {
+      font-style: italic;
+
+      &.not-active {
+        font-style: normal; // Temp style to remove italics when another sub-menu is opened
+      }
+    }
+
+    > ul { 
+      display: block; // Expand the active trail menu so it's visilbe when the menu is opened
+    }
   }
 
-  li.last a{
-    margin-right: 0px;
+  ul > li.active-trail > ul {
+
+    a {
+      font-style: normal;
+    }
   }
- 
 
 }
 
 div .region-leaderboard {
-  float: right;
-
-  ul{
-     margin: 0px;
-  }
   
   a {
-    color: #FFF;
-    padding: 0.25rem 0.45rem;
+    color: #fff;
     text-decoration: none;
-    display: inline-block;
-    border-radius: 3%/15%;
     background: $button_nonactive_background;
+    border-radius: 0.25rem;   
+
     &:hover {
       background: $button_active_background;
       color: $darkgrey;
@@ -210,25 +248,25 @@ div .region-leaderboard {
   }
 
   li.sfHover a {
-      background: $button_active_background;
-      color: $darkgrey;
-      padding-bottom: 9px;
-      bottom-border: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+    background: $button_active_background;
+    color: $darkgrey;
+    padding-bottom: 9px;
+    bottom-border: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
-  .sf-menu{
+  .sf-menu {
     line-height: inherit;
   }
 
-  ul.sf-hidden{
-   left: -100px !important;
+  ul.sf-hidden {
+    left: -100px !important;
   }
 
-  ul.sf-menu{ 
-    li.last ul{
-       left: -94px;
+  ul.sf-menu {
+    li.last ul {
+      left: -94px;
     }
 
     ul {
@@ -249,7 +287,7 @@ div .region-leaderboard {
     }
   }
 
-  #sidr-wrapper-0{
+  #sidr-wrapper-0 {
     padding: 0rem;
     margin: 0.4rem 0.2rem 0.4rem 0.5rem;
     a {
@@ -263,19 +301,19 @@ div .region-leaderboard {
 
 }
 
-
-
 /* =============================================================================
  *   Leaderboard Parent
  * ========================================================================== */
 
 div .region-leaderboard-parent {
-  ul{
+  float: left;
+  
+  ul {
     margin: 0px;
   }
-  float: left;
-   a {
-    color: #FFF;
+  
+  a {
+    color: #fff;
     padding: 0.25rem 0.45rem;
     text-decoration: none;
     display: inline-block;
@@ -288,7 +326,6 @@ div .region-leaderboard-parent {
   }
  
 }
-
 
 /* =============================================================================
  *   Page 
@@ -313,10 +350,13 @@ div .region-leaderboard-parent {
   .container {
   }
 }
+
 /*
  * Wraps all header elements - branding and .region-header
  */
-#header {}
+#header {
+  text-align: center;
+}
 
 /*
  * Wraps the nav elements
@@ -338,20 +378,22 @@ div .region-leaderboard-parent {
  * Wraps all the branding elements, logo, name and slogan
  */
 #branding {
-    float: left;
-    clear: both;
 }
 
 /*
  * Logo
  */
 #logo {
-  padding: 10px ;
-  float: left;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 5px;
+  margin-left: -30px;
+  padding: 0;
 
   img {
-    vertical-align: bottom;
-    width: $logo_width;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -359,7 +401,6 @@ div .region-leaderboard-parent {
  * Wrapper for the site name and slogan
  */
 #name-and-slogan {
-    float: left;
 }
 
 
@@ -368,14 +409,14 @@ div .region-leaderboard-parent {
  */
 #site-name {
   margin: 0;
-  padding-top: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
   line-height: 2.4rem;
   font-family: $sans-serif-small;
-  //font-weight: 400;
+  font-weight: 400;
   font-size: 2.4rem;
 
   a {
-
     color: black;
 
     &:link,
@@ -405,17 +446,15 @@ div .region-leaderboard-parent {
  *   Header Navigation
  * ========================================================================== */
 
-.region-header-navigation{
+.region-header-navigation {
+  margin-top: 0.8rem;
+  float: right;
 
-  .block{
+  .block {
     margin-bottom: 0.5rem;
   }
 
-  margin-top: 0.8rem;
-
-  float: right;
-
-  ul{
+  ul {
     list-style: none;
     margin: 0px 0px 0.3rem 0px;
     float: right;
@@ -425,20 +464,21 @@ div .region-leaderboard-parent {
     display: inline-block;
   }
 
-  li a{
+  li a {
     color: black;
     background: #CFDADF;
     padding: 0.3rem 0.6rem;
     margin-right: 1rem;    
     border-radius: 3%/15%;
     text-decoration: none;
+    
     &:hover {
-          background: $button_active_background;
-          color: $darkgrey;          
+      background: $button_active_background;
+      color: $darkgrey;          
     }
   }
 
-  li.last a{
+  li.last a {
     margin-right: 0px;
   }
 
@@ -456,7 +496,7 @@ div .region-leaderboard-parent {
 }
 
 #block-search-form form input.form-submit {
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }
@@ -466,14 +506,16 @@ div .region-leaderboard-parent {
  *   Page title 
  * ========================================================================== */
 
-#title-wrapper{
+#title-wrapper {
   color: white;
   clear: both;
-  div.container{
+
+  div.container {
     background: $carletonred;
     min-height: 1rem;
   }
-  h1{
+
+  h1 {
     padding-left: 2rem;
     margin: 0;
   }
@@ -794,6 +836,7 @@ ul.menu {
 
   li {
     margin: 0;
+    padding: 0;
 
     &.collapsed,
     &.expanded,

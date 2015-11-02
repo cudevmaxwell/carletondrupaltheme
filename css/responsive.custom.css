@@ -10,6 +10,29 @@
 @media only screen and (max-width: 480px) { /*  Float Region Blocks - custom media query CSS example:  Float regions blocks is an Extension you can enable in the appearance settings for your theme. This feature allows you to automatically float blocks in regions, you can switch it on and off depending on your requirements. For design purposes you many want to remove the floats for devices where the entire theme is just one column - for example small mobile phones. The following CSS is inside the custom media query:  @media only screen and (max-width: 480px){}  This will target devices with a maximum width of 480px - most small phones. In these smaller screen sizes we can remove the float and widths so all blocks stack instead of displaying horizonally. The selector used is an "attribute selector" which will match on any float block class. Use your inspector or Firebug to get the classes from the page output if you need more granular control over block alignment and stacking. */
   .region[class*="float-blocks"] .block { float: none; width: 100%; } }
 /* Tablet sizes and up */
-/* @media only screen and (min-width: 768px) {} */
+@media only screen and (min-width: 768px) { #leaderboard-wrapper { height: 40px; }
+  #leaderboard-wrapper .block { padding: 0rem; margin: 0.4rem 0.2rem 0rem 0.5rem; list-style: none; }
+  #leaderboard-wrapper li { display: inline-block; padding: 0px; }
+  #leaderboard-wrapper li.last a { margin-right: 0px; }
+  #leaderboard-wrapper li ul li { display: block; }
+  #leaderboard-wrapper li ul li a { margin-right: 0; border-radius: 0; }
+  #menu-link { display: none; }
+  #block-system-main-menu { float: right; display: block; }
+  #block-system-main-menu ul > li { padding: 0 0.5rem; }
+  #block-system-main-menu ul > li.active-trail > ul { display: none; }
+  #block-system-main-menu ul > li.active-trail a { font-style: normal; }
+  #block-system-main-menu ul > li.hover > a { background: #efefef; color: #1a1a1a; padding-bottom: 0.6rem; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+  #block-system-main-menu ul > li a { padding: 0.25rem 0.6rem; }
+  #block-system-main-menu ul > li a.active { font-style: normal; }
+  #block-system-main-menu > div > ul { position: relative; }
+  #block-system-main-menu ul > li > ul { display: none; width: 9rem; position: absolute; top: 100%; padding: 0; margin: 0; background-color: #efefef; -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.4); -moz-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.4); box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5); }
+  #block-system-main-menu ul > li > ul li { padding: 0; }
+  #block-system-main-menu ul > li > ul a { background-color: #efefef; color: #186d92; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  #block-system-main-menu ul > li > ul a:hover { text-decoration: underline; }
+  #block-system-main-menu ul > li.last > ul { right: 0.5rem; }
+  div .region-leaderboard ul { margin: 0px; }
+  #logo { padding: 10px; float: left; position: static; margin-left: 0; }
+  #logo img { vertical-align: bottom; width: 70px; height: 70px; }
+  #header { text-align: left; } }
 /* Desktops/laptops and up */
 /* @media only screen and (min-width: 1025px) {} */
