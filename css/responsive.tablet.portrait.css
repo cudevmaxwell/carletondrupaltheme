@@ -2,11 +2,3 @@
 @import url("../fonts/opensans_semibold/stylesheet.css");
 @import url("../fonts/opensans_lightitalic/stylesheet.css");
 /* Important Information about this CSS File  - Do not delete or rename this file, if you do not use it leave it blank (delete everything) and the file will be skipped when you enable Production Mode in the Global theme settings.  - Read the _README file in this directory, it contains useful help and other information. */
-/* ============================================================================= Remove Ribbon Style ========================================================================== */
-#columns { border-left: none; border-right: none; border-bottom: none; }
-
-#title-wrapper div.container { min-height: 0.5rem; }
-
-#header { text-align: center; }
-
-#branding { display: inline-block; float: none; }

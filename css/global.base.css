@@ -159,8 +159,13 @@ table { border: 1px solid; border-spacing: 0; border-collapse: collapse; font-si
 img { height: auto; -ms-interpolation-mode: bicubic; }
 
 /* Ethan Marcotte - http://front.ie/l8rJaA */
-img, embed, object, video { max-width: 100%; }
-
+/*
+img,
+embed,
+object,
+video { max-width: 100%;
+}
+*/
 /* Disable flexiblity for IE8 and below */
 .lt-ie9 img, .lt-ie9 object, .lt-ie9 embed, .lt-ie9 video { max-width: none; }
 

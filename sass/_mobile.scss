@@ -1,25 +1,36 @@
+#title-wrapper {
+  h1 {
+    padding-left: 1rem;
+  }
+}
+
+#site-name {
+  font-size: 2rem;
+}
+
 /* =============================================================================
  *   Remove Ribbon Style
  * ========================================================================== */
-
 #columns {
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
 
-#title-wrapper{
-  div.container{
+#title-wrapper {
+  div.container {
     min-height: 0.5rem;
   }
 }
 
-#header{
+#header {
   text-align: center;
 }
 
-#branding{
+#branding {
   display: inline-block;
   float: none;
-}
 
+  #name-and-slogan {
+  }
+}

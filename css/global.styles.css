@@ -4,7 +4,7 @@
 /* @file global.styles  Styles you add here will load for all device sizes, they are "global", as opposed to "responsive" styles, which only load for a given breakpoint (media query) that you set in theme settings. See the README for more details.   How to use this file: --------------------  There are many empty selectors and some basic styles to act as a guide. Nothing is set in stone and you can change anything - even delete all of it and start with your own clean slate.  To FORCE PRINT all selectors you can search and replace a single { (opening curly brace) and insert an empty comment. This is very useful in conjuction with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/  See global.base also which includes normalize.css and some additional helper classes and base styles. */
 /* ============================================================================= Base ========================================================================== */
 /* To preserve theme settings never apply font properties to the HTML element. This is critically important if you are using the Responsive JavaScript feature as this relies on being able to set a pseudo font family on the HTML element. If you need to set default font properties of any kind use the BODY element as these can be overridden using font theme settings. */
-html { background: #E6E6E6; }
+html { background: #e6e6e6; }
 
 body { font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 87.5%; }
 
@@ -15,54 +15,62 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 #admin-menu { position: relative; box-shadow: none; }
 
 /* ============================================================================= Leaderboard ========================================================================== */
-#leaderboard-wrapper { background: #1A1A1A; height: 40px; }
-#leaderboard-wrapper .block { padding: 0rem; margin: 0.4rem 0.2rem 0rem 0.5rem; list-style: none; }
+#leaderboard-wrapper { min-height: 40px; background: #1a1a1a; }
 #leaderboard-wrapper .block-inner { margin: 0px; }
-#leaderboard-wrapper li { display: inline-block; padding: 0px; }
-#leaderboard-wrapper li a { margin-right: 0.3rem; }
-#leaderboard-wrapper li.last a { margin-right: 0px; }
 
-div .region-leaderboard { float: right; }
-div .region-leaderboard li.sfHover a { background: #EFEFEF; color: #1A1A1A; padding-bottom: 9px; bottom-border: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
-div .region-leaderboard a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
+#menu-link { float: right; margin: 0.3rem; padding: 0.25rem 0.45rem; }
+
+#block-system-main-menu { display: none; clear: both; position: relative; z-index: 10; }
+#block-system-main-menu ul { list-style: none; padding: 0; margin: 0 0.5rem; }
+#block-system-main-menu li.leaf, #block-system-main-menu li.collapsed { list-style-type: none; list-style-image: none; }
+#block-system-main-menu li a { display: block; background-color: #1a1a1a; padding: 0.5rem; transition: all linear 0.1s; }
+#block-system-main-menu li a:hover { background-color: #efefef; }
+#block-system-main-menu li a.active { font-style: italic; }
+#block-system-main-menu li ul { display: none; }
+#block-system-main-menu ul > li.active-trail a { font-style: italic; }
+#block-system-main-menu ul > li.active-trail a.not-active { font-style: normal; }
+#block-system-main-menu ul > li.active-trail > ul { display: block; }
+#block-system-main-menu ul > li.active-trail > ul a { font-style: normal; }
+
+div .region-leaderboard a { color: #fff; text-decoration: none; background: #393939; border-radius: 0.25rem; }
+div .region-leaderboard a:hover { background: #efefef; color: #1a1a1a; }
+div .region-leaderboard li.sfHover a { background: #efefef; color: #1a1a1a; padding-bottom: 9px; bottom-border: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
 div .region-leaderboard .sf-menu { line-height: inherit; }
 div .region-leaderboard ul.sf-hidden { left: -100px !important; }
 div .region-leaderboard ul.sf-menu li.last ul { left: -94px; }
-div .region-leaderboard ul.sf-menu ul { -webkit-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); background: #EFEFEF; margin: 0px; padding-top: 10px; top: 32px; }
+div .region-leaderboard ul.sf-menu ul { -webkit-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 3px 5px 5px 0px rgba(50, 50, 50, 0.75); background: #efefef; margin: 0px; padding-top: 10px; top: 32px; }
 div .region-leaderboard ul.sf-menu ul a { color: #186d92; background: transparent; }
 div .region-leaderboard ul.sf-menu ul a:hover { text-decoration: underline; }
 div .region-leaderboard #sidr-wrapper-0 { padding: 0rem; margin: 0.4rem 0.2rem 0.4rem 0.5rem; }
 div .region-leaderboard #sidr-wrapper-0 a { background: #393939; }
-div .region-leaderboard #sidr-wrapper-0 a:hover { background: #EFEFEF; color: #1A1A1A; }
+div .region-leaderboard #sidr-wrapper-0 a:hover { background: #efefef; color: #1a1a1a; }
 
-/* ============================================================================= Leaderboard Left ========================================================================== */
+/* ============================================================================= Leaderboard Parent ========================================================================== */
 div .region-leaderboard-parent { float: left; }
 div .region-leaderboard-parent ul { margin: 0px; }
-div .region-leaderboard-parent a { color: #FFF; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
-div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
+div .region-leaderboard-parent a { color: #fff; padding: 0.25rem 0.45rem; text-decoration: none; display: inline-block; border-radius: 3%/15%; background: #393939; }
+div .region-leaderboard-parent a:hover { background: #efefef; color: #1a1a1a; }
 
 /* ============================================================================= Page  ========================================================================== */
-#page { background: #E6E6E6; }
+#page { background: #e6e6e6; }
 
 /* ============================================================================= Header  ========================================================================== */
 /* Wraps the header */
 /* Wraps all header elements - branding and .region-header */
+#header { text-align: center; }
+
 /* Wraps the nav elements */
 .region-header { float: left; }
 
 /* ============================================================================= Branding ========================================================================== */
 /* Wraps all the branding elements, logo, name and slogan */
-#branding { float: left; clear: both; }
-
 /* Logo */
-#logo { padding: 10px; float: left; }
-#logo img { vertical-align: bottom; width: 70px; }
+#logo { position: absolute; z-index: 10; left: 50%; top: 5px; margin-left: -30px; padding: 0; }
+#logo img { width: 60px; height: 60px; }
 
 /* Wrapper for the site name and slogan */
-#name-and-slogan { float: left; }
-
 /* Site name (h1) */
-#site-name { margin: 0; padding-top: 0.8rem; line-height: 2.4rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
+#site-name { margin: 0; padding-top: 1.5rem; padding-bottom: 0.5rem; line-height: 2.4rem; font-family: "open_sansregular", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 2.4rem; }
 #site-name a { color: black; }
 #site-name a:link, #site-name a:visited { text-decoration: none; }
 #site-name a:hover, #site-name a:focus { text-decoration: underline; }
@@ -76,7 +84,7 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 .region-header-navigation ul { list-style: none; margin: 0px 0px 0.3rem 0px; float: right; }
 .region-header-navigation li { display: inline-block; }
 .region-header-navigation li a { color: black; background: #CFDADF; padding: 0.3rem 0.6rem; margin-right: 1rem; border-radius: 3%/15%; text-decoration: none; }
-.region-header-navigation li a:hover { background: #EFEFEF; color: #1A1A1A; }
+.region-header-navigation li a:hover { background: #efefef; color: #1a1a1a; }
 .region-header-navigation li.last a { margin-right: 0px; }
 
 /* ============================================================================= Search  (only in Header Navigation) ========================================================================== */
@@ -86,7 +94,7 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 
 /* ============================================================================= Page title  ========================================================================== */
 #title-wrapper { color: white; clear: both; }
-#title-wrapper div.container { background: #B9212c; min-height: 1rem; }
+#title-wrapper div.container { background: #b9212c; min-height: 1rem; }
 #title-wrapper h1 { padding-left: 2rem; margin: 0; }
 
 /* ============================================================================= Page content header ========================================================================== */
@@ -96,8 +104,8 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 /* Wraps messages and help */
 /* Wraps the secondary content/preface region */
 /* Wraps the sidebars the content column */
-#columns { border-top: 1rem solid #5A1E17; border-left: 1rem solid #E6E6E6; border-right: 1rem solid #E6E6E6; border-bottom: 1rem solid #090909; background: #fff; }
-#columns div.columns-inner { background: #fff; position: relative; top: -1rem; padding-top: 0.3rem; }
+#columns { border-top: 1rem solid #5A1E17; border-left: 1rem solid #E6E6E6; border-right: 1rem solid #E6E6E6; border-bottom: 1rem solid #090909; background: white; }
+#columns div.columns-inner { background: white; position: relative; top: -1rem; padding-top: 0.3rem; }
 
 /* Main content column wrapper */
 /* Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column */
@@ -110,10 +118,10 @@ div .region-leaderboard-parent a:hover { background: #EFEFEF; color: #1A1A1A; }
 /* ============================================================================= Footer  ========================================================================== */
 #footer-wrapper .container { background: #1A1A1A; border-bottom: 0.2rem solid #b9212c; }
 
-#footer { background: #fff; color: #dedfd7; margin-left: 1rem; margin-right: 1rem; position: relative; top: -1rem; }
+#footer { background: white; color: #dedfd7; margin-left: 1rem; margin-right: 1rem; position: relative; top: -1rem; }
 
 /* Footer region */
-.region-footer { background: #1A1A1A; position: relative; top: 1rem; }
+.region-footer { background: #1a1a1a; position: relative; top: 1rem; }
 .region-footer a { color: #dedfd7; }
 
 /* ============================================================================= Misc Global Styles ========================================================================== */
@@ -156,7 +164,7 @@ a:hover, a:focus { text-decoration: underline; }
 /* ============================================================================= Menus, usually blocks ========================================================================== */
 ul.menu { padding-left: 15px; }
 ul.menu ul { padding-left: 15px; }
-ul.menu li { margin: 0; }
+ul.menu li { margin: 0; padding: 0; }
 
 /* If li.content exists it's a problem, so reset the padding */
 .block .menu li.content { padding: 0; }
@@ -186,20 +194,20 @@ ul.pager li.pager-current { font-weight: 700; }
 /* Theme the various states of pager links */
 /* ============================================================================= Skip Navigation ========================================================================== */
 #skip-link { left: 50%; margin-left: -6.5em; margin-top: 0; padding: 0 0.5em; position: absolute; width: 12em; z-index: 50; }
-#skip-link a { background: #444; background: rgba(0, 0, 0, 0.6); color: #fff; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
-#skip-link a:link, #skip-link a:visited { background: #444; background: rgba(0, 0, 0, 0.6); color: #fff; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
+#skip-link a { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
+#skip-link a:link, #skip-link a:visited { background: #444; background: rgba(0, 0, 0, 0.6); color: white; display: block; line-height: 2; padding: 0; text-align: center; text-decoration: none; }
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active { outline: 0; }
 
 /* ============================================================================= Tabs (local tasks) ========================================================================== */
 #tasks { margin-bottom: 15px; }
 
-ul.primary { border-bottom-color: #ccc; margin: 20px 0; padding: 0 0 0 5px; }
+ul.primary { border-bottom-color: #cccccc; margin: 20px 0; padding: 0 0 0 5px; }
 ul.primary li { display: block; float: left; margin: 0 1px -1px; }
-ul.primary li a { background-color: #f5f5f5; border-color: #ccc; margin-right: 1px; padding: 0 10px; display: block; float: left; height: 1.5em; line-height: 1.5em; }
-ul.primary li a:hover, ul.primary li a:focus { background-color: #eee; border-color: #ccc; }
-ul.primary li.active a, ul.primary li.active a:hover, ul.primary li.active a:focus { background-color: #fff; border-bottom-color: #fff; }
+ul.primary li a { background-color: whitesmoke; border-color: #cccccc; margin-right: 1px; padding: 0 10px; display: block; float: left; height: 1.5em; line-height: 1.5em; }
+ul.primary li a:hover, ul.primary li a:focus { background-color: #eeeeee; border-color: #cccccc; }
+ul.primary li.active a, ul.primary li.active a:hover, ul.primary li.active a:focus { background-color: white; border-bottom-color: white; }
 
-ul.secondary { border-bottom: 1px solid #ccc; margin: 1em 0 0; padding: 0 .3em 1em; }
+ul.secondary { border-bottom: 1px solid #cccccc; margin: 1em 0 0; padding: 0 .3em 1em; }
 ul.secondary li { border-right: 0; list-style: none; padding: 0 10px 0 0; }
 ul.secondary li a:hover, ul.secondary li a.active { border-bottom: none; text-decoration: underline; }
 
@@ -312,29 +320,29 @@ ul.action-links { margin: 20px 0 0; list-style: none; }
 /* Comment states */
 /* Preview of the comment before submitting new or updated comment */
 /* "New" marker for comments that are new for the current user */
-.new { color: #c00; }
+.new { color: #cc0000; }
 
 /* Nested comments are indented */
 .indented { margin-left: 40px; }
 
 /* ============================================================================= Forms ========================================================================== */
 /* Wrapper for a form element (or group of form elements) and its label */
-.form-item input.error, .form-item textarea.error, .form-item select.error { border: 1px solid #c00; }
+.form-item input.error, .form-item textarea.error, .form-item select.error { border: 1px solid #cc0000; }
 .form-item label { font-weight: 700; }
 .form-item .description { font-size: 0.85em; }
 
 /* Highlight marks and form required mark */
-.marker, .form-required { color: #c00; }
+.marker, .form-required { color: #cc0000; }
 
 /* The submit button */
 .container-inline div, .container-inline label { display: inline; }
 
 /* Define consistent borders */
-fieldset { border: 1px solid #ccc; }
+fieldset { border: 1px solid #cccccc; }
 
 /* Tips for Drupal's input formats */
 /* Buttons used by contrib modules like Media */
-a.button { -moz-appearance: button; -webkit-appearance: button; }
+a.button { -webkit-appearance: button; -moz-appearance: button; appearance: button; }
 
 /* Password confirmation */
 .password-parent, .confirm-parent { margin: 0; }
@@ -343,7 +351,7 @@ a.button { -moz-appearance: button; -webkit-appearance: button; }
 table { margin: 10px 0; padding: 0; width: 100%; }
 table.sticky-header { z-index: 10; }
 
-table, thead, tbody, tr, th, td { border-color: #ccc; }
+table, thead, tbody, tr, th, td { border-color: #cccccc; }
 
 table, td, th { vertical-align: middle; }
 
@@ -353,12 +361,12 @@ thead tr { font-weight: 700; background-color: #e5e5e5; }
 
 td, th { border-bottom: 0; margin: 0; padding: 5px 7px; }
 
-tbody tr { border-top: 1px solid #ccc; }
+tbody tr { border-top: 1px solid #cccccc; }
 
 tr { /* Table row striping */ }
-tr.odd { background: #fff; }
-tr.info, tr.even, tr:nth-child(2n+2) { border-bottom: 0; background-color: #f5f5f5; }
-tr.odd td.active { background-color: #eee; }
+tr.odd { background: white; }
+tr.info, tr.even, tr:nth-child(2n+2) { border-bottom: 0; background-color: whitesmoke; }
+tr.odd td.active { background-color: #eeeeee; }
 tr.even td.active { background-color: #ebebeb; }
 
 /* Forum tables Core sets white-space to nowrap, which makes no sense */
@@ -385,7 +393,7 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 #admin-menu { margin: 0; padding: 0; }
 
 /* Devel Module */
-.dev-query { background: #eee; padding: 30px; }
+.dev-query { background: #eeeeee; padding: 30px; }
 
 /* Styleguide module tweaks */
 #styleguide-header { padding: 0 10px; }
