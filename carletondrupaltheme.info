@@ -75,9 +75,9 @@
 
 ;----------// Regions
 
+  regions[content]           = Main Content
   regions[sidebar_first]     = Sidebar first
   regions[sidebar_second]    = Sidebar second
-  regions[content]           = Main Content
   regions[highlighted]       = Highlighted
   regions[content_aside]     = Aside
   regions[secondary_content] = Secondary
