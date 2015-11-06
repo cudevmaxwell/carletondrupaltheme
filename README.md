@@ -14,4 +14,5 @@ Compatable, ensure the "Adjust..." and "Keep Menu..." options are disabled in ad
 
  - AdaptiveTheme by Jeff Burnz : http://adaptivethemes.com/
  - Silk Icons by Mark James : http://www.famfamfam.com/
+ - Contributions by Jason Hollett.
 
