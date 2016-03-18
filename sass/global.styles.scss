@@ -292,9 +292,9 @@ div .region-leaderboard {
     margin: 0.4rem 0.2rem 0.4rem 0.5rem;
     a {
       background: $button_nonactive_background;
-        &:hover {
-          background: $button_active_background;
-          color: $darkgrey;
+      &:hover {
+        background: $button_active_background;
+        color: $darkgrey;
       }
     }
   }
@@ -306,18 +306,29 @@ div .region-leaderboard {
  * ========================================================================== */
 
 div .region-leaderboard-parent {
+  display: none;
   float: left;
   
   ul {
     margin: 0px;
+
+    li.leaf {
+      margin-right: 0.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
+
+
   
   a {
     color: #fff;
-    padding: 0.25rem 0.45rem;
+    padding: 0.25rem 0.5rem;
     text-decoration: none;
     display: inline-block;
-    border-radius: 3%/15%;
+    border-radius: 0.25rem;
     background: $button_nonactive_background;
     &:hover {
       background: $button_active_background;
@@ -409,7 +420,7 @@ div .region-leaderboard-parent {
  */
 #site-name {
   margin: 0;
-  padding-top: 1.5rem;
+  padding-top: 1.75rem;
   padding-bottom: 0.5rem;
   line-height: 2.4rem;
   font-family: $sans-serif-small;
@@ -438,8 +449,8 @@ div .region-leaderboard-parent {
   margin: 0;
   font-family: $sans-serif-small-italic;
   display: block;
-  float: right;
   font-weight: normal;
+  padding-bottom: 0.5rem;
 }
 
 /* =============================================================================
@@ -448,7 +459,6 @@ div .region-leaderboard-parent {
 
 .region-header-navigation {
   margin-top: 0.8rem;
-  float: right;
 
   .block {
     margin-bottom: 0.5rem;
@@ -1399,7 +1409,7 @@ ul.action-links {
 
   ul,
   ol {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 1rem;
   }
 
   li {

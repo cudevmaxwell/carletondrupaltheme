@@ -71,7 +71,7 @@
 
     .block {
       padding: 0rem;
-      margin: 0.4rem 0.2rem 0rem 0.5rem;
+      margin: 0.4rem 0 0 0;
       list-style: none;
     }
 
@@ -100,7 +100,6 @@
   }
 
   #block-system-main-menu {
-    float: right;
     display: block;
 
     ul {
@@ -131,7 +130,7 @@
         }
 
         a {
-          padding: 0.25rem 0.6rem;
+          padding: 0.25rem 0.5rem;
 
           &.active {
             font-style: normal;
@@ -181,17 +180,33 @@
 
   }
 
+  div .region-leaderboard-parent {
+    display: block;
+  }
+
   div .region-leaderboard {
+    float: right;
 
     ul {
       margin: 0px;
     }
   }
 
-  #logo {
-    padding: 10px;
+
+
+  #branding {
     float: left;
-    position: static;
+    position: relative;
+    padding-left: 90px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 60%;
+  }
+
+  #logo {
+    position: absolute;
+    left: 10px;
+    top: 15px;
     margin-left: 0;
 
     img {
@@ -203,6 +218,11 @@
 
   #header {
     text-align: left;
+  }
+
+  .region-header-navigation {
+    float: right;
+    width: 40%;
   }
 
 }
