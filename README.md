@@ -16,6 +16,7 @@ Compatable, ensure the "Adjust..." and "Keep Menu..." options are disabled in ad
 2. In order for a second level menu to be visible, it must be enabled. To do this you need to edit a top level menu item in the Main Menu and enable "Show as expanded".
 
 ## Credits
-
+=======
  - AdaptiveTheme by Jeff Burnz : http://adaptivethemes.com/
  - Silk Icons by Mark James : http://www.famfamfam.com/
+ - Contributions by Jason Hollett.
